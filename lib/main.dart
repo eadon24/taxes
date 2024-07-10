@@ -177,10 +177,10 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
     String allValues = """
       Calculadora EADON
       $updateText
-      Cantidad en Soles - Tasa $exchangeRate Bs: ${_solesController.text}
+      Cantidad en Soles  ${_solesController.text} - Tasa $exchangeRate Bs.
       Cantidad en Bs. a Recibir: ${_bolivaresController.text}
-      Cantidad en Dólares (Paralelo) - $dollarParallelRate Bs: ${_dollarParallelController.text}
-      Cantidad en Dólares (BCV) - $dollarBCVRate Bs: ${_dollarBCVController.text}
+      Dólares (Paralelo) ${_dollarParallelController.text} - tasa $dollarParallelRate Bs. 
+      Dólares (BCV) ${_dollarBCVController.text} - tasa $dollarBCVRate Bs.  
     """;
 
     Clipboard.setData(ClipboardData(text: allValues));
