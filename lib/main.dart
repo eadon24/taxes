@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(200.0), // Aumenta la altura del AppBar
+          preferredSize:
+              const Size.fromHeight(200.0), // Aumenta la altura del AppBar
           child: AppBar(
             backgroundColor: Color(0xFF012779),
             flexibleSpace: Center(
@@ -51,7 +52,7 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Actualización: 10/07/2024 12:00 pm',
+                  'Actualización: 12/07/2024 12:13 pm',
                   style: TextStyle(color: Colors.red),
                 ),
                 SizedBox(height: 20),
@@ -115,13 +116,13 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   final TextEditingController _dollarBCVController = TextEditingController();
 
   // Variables que debes modificar para actualizar las tasas de cambio
-  double exchangeRate = 10.08; // Tasa de cambio soles a bolívares
+  double exchangeRate = 10.15; // Tasa de cambio soles a bolívares
   double dollarParallelRate =
-      40.63; // Tasa de cambio bolívares a dólares paralelo
-  double dollarBCVRate = 36.51; // Tasa de cambio bolívares a dólares BCV
+      40.88; // Tasa de cambio bolívares a dólares paralelo
+  double dollarBCVRate = 36.53; // Tasa de cambio bolívares a dólares BCV
 
   // Variable que debes modificar para actualizar la fecha y hora
-  String updateText = 'Actualización: 10/07/2024 12:00 pm';
+  String updateText = 'Actualización: 12/07/2024 12:13 pm';
 
   void _updateFields({String source = ''}) {
     double soles = double.tryParse(_solesController.text) ?? 0.0;

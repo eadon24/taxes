@@ -1,0 +1,10 @@
+^C:\PROYECTOS FLUTTER\TAXES\BUILD\WINDOWS\X64\CMAKEFILES\CF1198C3B1912373AAF84C84543ECAC0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/PROYECTOS FLUTTER/taxes/windows" "-BC:/PROYECTOS FLUTTER/taxes/build/windows/x64" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/PROYECTOS FLUTTER/taxes/build/windows/x64/taxes.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
