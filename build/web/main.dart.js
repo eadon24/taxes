@@ -76057,7 +76057,7 @@ N(a){var s,r,q=null,p=A.xW(q,B.ju,q),o=A.es(q,20,q),n=t.E
 o=A.iq(A.tt(A.b([o,new A.uk(1,B.CF,new A.uL(A.au1(q,q,new A.uc("assets/logo.png",2,q,q)),q),q)],n),B.bQ,B.jr,B.ct),q,q)
 s=A.b([A.oO(q,A.oN(B.CU,q),q,new A.Zw(),q,q)],n)
 r=A.S(242,255,255,255)
-return new A.vo(new A.wQ(new A.Gz(new A.rW(s,o,new A.x(4278265721),new A.N5(q,q,1/0,56),q),B.L8,q),A.lT(q,A.iq(A.tt(A.b([A.f0("Actualizaci\xf3n: 15/07/2024 10:00 am",q,q,q,A.dH(q,q,B.GZ,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),A.es(q,20,q),new A.CQ(q)],n),B.bQ,B.jr,B.ct),q,q),B.z,r,q,q,q,new A.aC(20,10,20,10),q),q),"Calculadora",p,q)}}
+return new A.vo(new A.wQ(new A.Gz(new A.rW(s,o,new A.x(4278265721),new A.N5(q,q,1/0,56),q),B.L8,q),A.lT(q,A.iq(A.tt(A.b([A.f0("Actualizaci\xf3n: 15/07/2024 12:00 pm",q,q,q,A.dH(q,q,B.GZ,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),A.es(q,20,q),new A.CQ(q)],n),B.bQ,B.jr,B.ct),q,q),B.z,r,q,q,q,new A.aC(20,10,20,10),q),q),"Calculadora",p,q)}}
 A.Zw.prototype={
 $0(){},
 $S:0}

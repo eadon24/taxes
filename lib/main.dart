@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Actualización: 15/07/2024 10:00 am',
+                  'Actualización: 15/07/2024 12:00 pm',
                   style: TextStyle(color: Colors.red),
                 ),
                 SizedBox(height: 20),
