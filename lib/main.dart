@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Actualización: 16/07/2024 10:00 am',
+                  'Actualización: 17/07/2024',
                   style: TextStyle(color: Colors.red),
                 ),
                 SizedBox(height: 20),
@@ -118,11 +118,11 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   // Variables que debes modificar para actualizar las tasas de cambio
   double exchangeRate = 10.21; // Tasa de cambio soles a bolívares
   double dollarParallelRate =
-      40.80; // Tasa de cambio bolívares a dólares paralelo
-  double dollarBCVRate = 36.52; // Tasa de cambio bolívares a dólares BCV
+      40.98; // Tasa de cambio bolívares a dólares paralelo
+  double dollarBCVRate = 36.51; // Tasa de cambio bolívares a dólares BCV
 
   // Variable que debes modificar para actualizar la fecha y hora
-  String updateText = 'Actualización: 16/07/2024 10:00 am';
+  String updateText = 'Actualización: 17/07/2024';
 
   void _updateFields({String source = ''}) {
     double soles = double.tryParse(_solesController.text) ?? 0.0;
