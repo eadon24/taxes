@@ -76057,7 +76057,7 @@ N(a){var s,r,q=null,p=A.xW(q,B.ju,q),o=A.es(q,20,q),n=t.E
 o=A.iq(A.tt(A.b([o,new A.uk(1,B.CF,new A.uL(A.au1(q,q,new A.uc("assets/logo.png",2,q,q)),q),q)],n),B.bQ,B.jr,B.ct),q,q)
 s=A.b([A.oO(q,A.oN(B.CU,q),q,new A.Zw(),q,q)],n)
 r=A.S(242,255,255,255)
-return new A.vo(new A.wQ(new A.Gz(new A.rW(s,o,new A.x(4278265721),new A.N5(q,q,1/0,56),q),B.L8,q),A.lT(q,A.iq(A.tt(A.b([A.f0("Actualizaci\xf3n: 09/08/2024 09:00 am",q,q,q,A.dH(q,q,B.GZ,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),A.es(q,20,q),new A.CQ(q)],n),B.bQ,B.jr,B.ct),q,q),B.z,r,q,q,q,new A.aC(20,10,20,10),q),q),"Calculadora",p,q)}}
+return new A.vo(new A.wQ(new A.Gz(new A.rW(s,o,new A.x(4278265721),new A.N5(q,q,1/0,56),q),B.L8,q),A.lT(q,A.iq(A.tt(A.b([A.f0("Actualizaci\xf3n: 10/08/2024",q,q,q,A.dH(q,q,B.GZ,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),A.es(q,20,q),new A.CQ(q)],n),B.bQ,B.jr,B.ct),q,q),B.z,r,q,q,q,new A.aC(20,10,20,10),q),q),"Calculadora",p,q)}}
 A.Zw.prototype={
 $0(){},
 $S:0}
@@ -76100,7 +76100,7 @@ s.e.jA(B.hr)
 s.f.jA(B.hr)
 s.r.jA(B.hr)},
 Zj(){var s,r=this,q=null
-A.on(new A.jP("      Calculadora EADON\n      Actualizaci\xf3n: 09/08/2024 09:00 am\n      Cantidad en Soles  "+r.d.a.a+" - Tasa 10.55 Bs.\n      Cantidad en Bs. a Recibir: "+r.e.a.a+"\n      D\xf3lares (Paralelo) "+r.f.a.a+" - tasa 41.77 Bs. \n      D\xf3lares (BCV) "+r.r.a.a+" - tasa 36.68 Bs.  \n    "))
+A.on(new A.jP("      Calculadora EADON\n      Actualizaci\xf3n: 10/08/2024\n      Cantidad en Soles  "+r.d.a.a+" - Tasa 10.55 Bs.\n      Cantidad en Bs. a Recibir: "+r.e.a.a+"\n      D\xf3lares (Paralelo) "+r.f.a.a+" - tasa 41.77 Bs. \n      D\xf3lares (BCV) "+r.r.a.a+" - tasa 36.68 Bs.  \n    "))
 s=r.c.ao(t.Pu)
 s.toString
 s.f.Gi(A.afi(q,q,q,q,q,B.ai,q,A.f0("Montos copiados al portapapeles",q,q,q,q,q,q),q,B.m1,q,q,q,q,q,q,q,q,q))},
