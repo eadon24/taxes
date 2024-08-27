@@ -33,14 +33,10 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <!-- Carga del archivo flutter.js que gestiona el service worker -->
+  <script src="flutter.js" defer></script>
+  <!-- Carga del bootstrap de Flutter -->
   <script src="flutter_bootstrap.js" async></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('flutter_service_worker.js');
-      });
-    }
-  </script>
-  
 </body>
 </html>
+
