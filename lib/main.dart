@@ -6,7 +6,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,12 +20,12 @@ class MyApp extends StatelessWidget {
           preferredSize:
               const Size.fromHeight(200.0), // Aumenta la altura del AppBar
           child: AppBar(
-            backgroundColor: Color(0xFF012779),
+            backgroundColor: const Color(0xFF012779),
             flexibleSpace: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Flexible(
                       child: Image.asset(
                     'assets/logo.png',
@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
             ),
             actions: <Widget>[
               IconButton(
-                icon: Icon(Icons.settings),
+                icon: const Icon(Icons.settings),
                 onPressed: () {
                   // Acción para el icono de configuración
                 },
@@ -46,16 +46,16 @@ class MyApp extends StatelessWidget {
         ),
         body: Container(
           color: Colors.white.withOpacity(0.95),
-          padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+          padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  'Actualización 11/09/2024',
+                const Text(
+                  'Actualización 11/09/2024 1:00pm',
                   style: TextStyle(color: Colors.red),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 CalculatorContainer(),
               ],
             ),
@@ -67,10 +67,12 @@ class MyApp extends StatelessWidget {
 }
 
 class CalculatorContainer extends StatelessWidget {
+  const CalculatorContainer({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(20.0),
+      padding: const EdgeInsets.all(20.0),
       decoration: BoxDecoration(
         color: Colors.white.withOpacity(0.9),
         borderRadius: BorderRadius.circular(10.0),
@@ -79,14 +81,14 @@ class CalculatorContainer extends StatelessWidget {
             color: Colors.grey.withOpacity(0.5),
             spreadRadius: 2,
             blurRadius: 5,
-            offset: Offset(0, 3),
+            offset: const Offset(0, 3),
           ),
         ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Center(
+          const Center(
             child: Text(
               'Calculadora E-ADON',
               style: TextStyle(
@@ -95,7 +97,7 @@ class CalculatorContainer extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           ExchangeCalculator(),
         ],
       ),
@@ -104,6 +106,8 @@ class CalculatorContainer extends StatelessWidget {
 }
 
 class ExchangeCalculator extends StatefulWidget {
+  const ExchangeCalculator({super.key});
+
   @override
   _ExchangeCalculatorState createState() => _ExchangeCalculatorState();
 }
@@ -116,13 +120,13 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   final TextEditingController _dollarBCVController = TextEditingController();
 
   // Variables que debes modificar para actualizar las tasas de cambio
-  double exchangeRate = 11.00; // Tasa de cambio soles a bolívares
+  double exchangeRate = 11.05; // Tasa de cambio soles a bolívares
   double dollarParallelRate =
-      43.87; // Tasa de cambio bolívares a dólares paralelo
+      44.08; // Tasa de cambio bolívares a dólares paralelo
   double dollarBCVRate = 36.69; // Tasa de cambio bolívares a dólares BCV
 
   // Variable que debes modificar para actualizar la fecha y hora
-  String updateText = 'Actualización 11/09/2024';
+  String updateText = 'Actualización 11/09/2024 1:00pm';
 
   void _updateFields({String source = ''}) {
     double soles = double.tryParse(_solesController.text) ?? 0.0;
@@ -151,19 +155,22 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
 
     setState(() {
       if (source != 'soles') _solesController.text = soles.toStringAsFixed(2);
-      if (source != 'bolivares')
+      if (source != 'bolivares') {
         _bolivaresController.text = bolivares.toStringAsFixed(2);
-      if (source != 'dollarParallel')
+      }
+      if (source != 'dollarParallel') {
         _dollarParallelController.text = dollarsParallel.toStringAsFixed(2);
-      if (source != 'dollarBCV')
+      }
+      if (source != 'dollarBCV') {
         _dollarBCVController.text = dollarsBCV.toStringAsFixed(2);
+      }
     });
   }
 
   void _copyToClipboard(String text) {
     Clipboard.setData(ClipboardData(text: text));
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Texto copiado al portapapeles')),
+      const SnackBar(content: Text('Texto copiado al portapapeles')),
     );
   }
 
@@ -186,7 +193,7 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
 
     Clipboard.setData(ClipboardData(text: allValues));
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Montos copiados al portapapeles')),
+      const SnackBar(content: Text('Montos copiados al portapapeles')),
     );
   }
 
@@ -200,9 +207,9 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
           keyboardType: TextInputType.number,
           decoration: InputDecoration(
             labelText: 'Tasa $exchangeRate Bs -  Soles a Enviar ',
-            labelStyle: TextStyle(fontWeight: FontWeight.bold),
+            labelStyle: const TextStyle(fontWeight: FontWeight.bold),
             suffixIcon: IconButton(
-              icon: Icon(Icons.content_copy),
+              icon: const Icon(Icons.content_copy),
               onPressed: () => _copyToClipboard(_solesController.text),
             ),
           ),
@@ -213,9 +220,9 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
           keyboardType: TextInputType.number,
           decoration: InputDecoration(
             labelText: 'Cantidad en Bs. a Recibir ',
-            labelStyle: TextStyle(fontWeight: FontWeight.bold),
+            labelStyle: const TextStyle(fontWeight: FontWeight.bold),
             suffixIcon: IconButton(
-              icon: Icon(Icons.content_copy),
+              icon: const Icon(Icons.content_copy),
               onPressed: () => _copyToClipboard(_bolivaresController.text),
             ),
           ),
@@ -226,9 +233,9 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
           keyboardType: TextInputType.number,
           decoration: InputDecoration(
             labelText: 'Dólar (Paralelo) - $dollarParallelRate Bs',
-            labelStyle: TextStyle(fontWeight: FontWeight.bold),
+            labelStyle: const TextStyle(fontWeight: FontWeight.bold),
             suffixIcon: IconButton(
-              icon: Icon(Icons.content_copy),
+              icon: const Icon(Icons.content_copy),
               onPressed: () => _copyToClipboard(_dollarParallelController.text),
             ),
           ),
@@ -239,32 +246,32 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
           keyboardType: TextInputType.number,
           decoration: InputDecoration(
             labelText: 'Dólar (BCV) - $dollarBCVRate Bs',
-            labelStyle: TextStyle(fontWeight: FontWeight.bold),
+            labelStyle: const TextStyle(fontWeight: FontWeight.bold),
             suffixIcon: IconButton(
-              icon: Icon(Icons.content_copy),
+              icon: const Icon(Icons.content_copy),
               onPressed: () => _copyToClipboard(_dollarBCVController.text),
             ),
           ),
           onChanged: (value) => _updateFields(source: 'dollarBCV'),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         ElevatedButton(
           onPressed: _resetFields,
           style: ElevatedButton.styleFrom(
-            backgroundColor: Color(0xFF4AFC92),
+            backgroundColor: const Color(0xFF4AFC92),
           ),
-          child: Text(
+          child: const Text(
             'Reiniciar',
             style: TextStyle(color: Colors.black, fontSize: 16.0),
           ),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         ElevatedButton(
           onPressed: _copyAllValues,
           style: ElevatedButton.styleFrom(
-            backgroundColor: Color(0xFF012779),
+            backgroundColor: const Color(0xFF012779),
           ),
-          child: Text(
+          child: const Text(
             'Copiar Todos los Montos',
             style: TextStyle(color: Colors.white, fontSize: 16.0),
           ),
