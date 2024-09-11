@@ -70109,7 +70109,7 @@ J(a){var s,r,q=null,p=A.pS(q,q,B.iA,q),o=A.ek(q,20,q),n=t.E
 o=A.jF(A.t9(A.b([o,new A.u0(1,B.Bo,new A.uk(A.auc(q,q,new A.tS("assets/logo.png",2,q,q)),q),q)],n),B.b4,B.iy,B.cb),q,q)
 s=A.b([A.oG(q,A.oF(B.BD,q),q,new A.a_w(),q,q)],n)
 r=A.M(242,255,255,255)
-return new A.v0(new A.we(new A.Fy(new A.rA(s,o,new A.k(4278265721),new A.LQ(q,q,1/0,56),q),B.JF,q),A.ok(q,A.jF(A.t9(A.b([A.eQ("Actualizaci\xf3n 10/09/2024 10:30 am",q,q,q,A.dy(q,q,B.FC,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),A.ek(q,20,q),new A.Cl(q)],n),B.b4,B.iy,B.cb),q,q),B.B,r,q,q,q,new A.aD(20,10,20,10),q),q),"Calculadora",p,q)}}
+return new A.v0(new A.we(new A.Fy(new A.rA(s,o,new A.k(4278265721),new A.LQ(q,q,1/0,56),q),B.JF,q),A.ok(q,A.jF(A.t9(A.b([A.eQ("Actualizaci\xf3n 11/09/2024",q,q,q,A.dy(q,q,B.FC,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),A.ek(q,20,q),new A.Cl(q)],n),B.b4,B.iy,B.cb),q,q),B.B,r,q,q,q,new A.aD(20,10,20,10),q),q),"Calculadora",p,q)}}
 A.a_w.prototype={
 $0(){},
 $S:0}
@@ -70133,14 +70133,14 @@ q=A.vC(p.r.a.a)
 if(q==null)q=0
 o.d=q
 if(a==="soles"){s=o.b=n*11
-o.c=s/43.77
+o.c=s/43.87
 o.d=s/36.69}else if(a==="bolivares"){o.a=s/11
-o.c=s/43.77
-o.d=s/36.69}else if(a==="dollarParallel"){s=o.b=r*43.77
+o.c=s/43.87
+o.d=s/36.69}else if(a==="dollarParallel"){s=o.b=r*43.87
 o.a=s/11
 o.d=s/36.69}else if(a==="dollarBCV"){s=o.b=q*36.69
 o.a=s/11
-o.c=s/43.77}p.ad(new A.a7o(o,p,a))},
+o.c=s/43.87}p.ad(new A.a7o(o,p,a))},
 rP(a){var s,r=null
 A.od(new A.jG(a))
 s=this.c.al(t.Pu)
@@ -70152,11 +70152,11 @@ s.e.j3(B.fX)
 s.f.j3(B.fX)
 s.r.j3(B.fX)},
 WE(){var s,r=this,q=null
-A.od(new A.jG("      Calculadora EADON\n      Actualizaci\xf3n 10/09/2024 10:30 am\n      Cantidad en Soles  "+r.d.a.a+" - Tasa 11 Bs.\n      Cantidad en Bs. a Recibir: "+r.e.a.a+"\n      D\xf3lares (Paralelo) "+r.f.a.a+" - tasa 43.77 Bs. \n      D\xf3lares (BCV) "+r.r.a.a+" - tasa 36.69 Bs.  \n    "))
+A.od(new A.jG("      Calculadora EADON\n      Actualizaci\xf3n 11/09/2024\n      Cantidad en Soles  "+r.d.a.a+" - Tasa 11 Bs.\n      Cantidad en Bs. a Recibir: "+r.e.a.a+"\n      D\xf3lares (Paralelo) "+r.f.a.a+" - tasa 43.87 Bs. \n      D\xf3lares (BCV) "+r.r.a.a+" - tasa 36.69 Bs.  \n    "))
 s=r.c.al(t.Pu)
 s.toString
 s.f.Ea(A.afH(q,q,q,q,q,B.a9,q,A.eQ("Montos copiados al portapapeles",q,q,q,q,q,q),q,B.kW,q,q,q,q,q,q,q,q,q))},
-J(a){var s,r,q=this,p=null,o=A.a3X(q.d,A.Eh(p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,A.dy(p,p,p,p,p,p,p,p,p,p,p,p,p,p,B.b9,p,p,!0,p,p,p,p,p,p,p,p),"Tasa 11 Bs -  Soles a Enviar ",p,p,p,p,p,p,p,p,A.oG(p,A.oF(B.f6,p),p,new A.a7p(q),p,p),p,p,p,p),B.fY,new A.a7q(q)),n=A.a3X(q.e,A.Eh(p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,A.dy(p,p,p,p,p,p,p,p,p,p,p,p,p,p,B.b9,p,p,!0,p,p,p,p,p,p,p,p),"Cantidad en Bs. a Recibir ",p,p,p,p,p,p,p,p,A.oG(p,A.oF(B.f6,p),p,new A.a7r(q),p,p),p,p,p,p),B.fY,new A.a7s(q)),m=A.a3X(q.f,A.Eh(p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,A.dy(p,p,p,p,p,p,p,p,p,p,p,p,p,p,B.b9,p,p,!0,p,p,p,p,p,p,p,p),"D\xf3lar (Paralelo) - 43.77 Bs",p,p,p,p,p,p,p,p,A.oG(p,A.oF(B.f6,p),p,new A.a7t(q),p,p),p,p,p,p),B.fY,new A.a7u(q)),l=A.a3X(q.r,A.Eh(p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,A.dy(p,p,p,p,p,p,p,p,p,p,p,p,p,p,B.b9,p,p,!0,p,p,p,p,p,p,p,p),"D\xf3lar (BCV) - 36.69 Bs",p,p,p,p,p,p,p,p,A.oG(p,A.oF(B.f6,p),p,new A.a7v(q),p,p),p,p,p,p),B.fY,new A.a7w(q)),k=A.ek(p,20,p),j=A.aiG(p,p,new A.k(4283104402),p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p)
+J(a){var s,r,q=this,p=null,o=A.a3X(q.d,A.Eh(p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,A.dy(p,p,p,p,p,p,p,p,p,p,p,p,p,p,B.b9,p,p,!0,p,p,p,p,p,p,p,p),"Tasa 11 Bs -  Soles a Enviar ",p,p,p,p,p,p,p,p,A.oG(p,A.oF(B.f6,p),p,new A.a7p(q),p,p),p,p,p,p),B.fY,new A.a7q(q)),n=A.a3X(q.e,A.Eh(p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,A.dy(p,p,p,p,p,p,p,p,p,p,p,p,p,p,B.b9,p,p,!0,p,p,p,p,p,p,p,p),"Cantidad en Bs. a Recibir ",p,p,p,p,p,p,p,p,A.oG(p,A.oF(B.f6,p),p,new A.a7r(q),p,p),p,p,p,p),B.fY,new A.a7s(q)),m=A.a3X(q.f,A.Eh(p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,A.dy(p,p,p,p,p,p,p,p,p,p,p,p,p,p,B.b9,p,p,!0,p,p,p,p,p,p,p,p),"D\xf3lar (Paralelo) - 43.87 Bs",p,p,p,p,p,p,p,p,A.oG(p,A.oF(B.f6,p),p,new A.a7t(q),p,p),p,p,p,p),B.fY,new A.a7u(q)),l=A.a3X(q.r,A.Eh(p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,A.dy(p,p,p,p,p,p,p,p,p,p,p,p,p,p,B.b9,p,p,!0,p,p,p,p,p,p,p,p),"D\xf3lar (BCV) - 36.69 Bs",p,p,p,p,p,p,p,p,A.oG(p,A.oF(B.f6,p),p,new A.a7v(q),p,p),p,p,p,p),B.fY,new A.a7w(q)),k=A.ek(p,20,p),j=A.aiG(p,p,new A.k(4283104402),p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p)
 j=A.aiF(A.eQ("Reiniciar",p,p,p,A.dy(p,p,B.o,p,p,p,p,p,p,p,p,16,p,p,p,p,p,!0,p,p,p,p,p,p,p,p),p,p),q.ga3x(),j)
 s=A.ek(p,10,p)
 r=A.aiG(p,p,new A.k(4278265721),p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p)
