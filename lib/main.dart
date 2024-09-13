@@ -47,15 +47,15 @@ class MyApp extends StatelessWidget {
         body: Container(
           color: Colors.white.withOpacity(0.95),
           padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-          child: Center(
+          child: const Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text(
-                  'Actualización 12/09/2024',
+                Text(
+                  'Actualización 13/09/2024',
                   style: TextStyle(color: Colors.red),
                 ),
-                const SizedBox(height: 20),
+                SizedBox(height: 20),
                 CalculatorContainer(),
               ],
             ),
@@ -85,10 +85,10 @@ class CalculatorContainer extends StatelessWidget {
           ),
         ],
       ),
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const Center(
+          Center(
             child: Text(
               'Calculadora E-ADON',
               style: TextStyle(
@@ -97,7 +97,7 @@ class CalculatorContainer extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 20),
+          SizedBox(height: 20),
           ExchangeCalculator(),
         ],
       ),
@@ -120,13 +120,13 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   final TextEditingController _dollarBCVController = TextEditingController();
 
   // Variables que debes modificar para actualizar las tasas de cambio
-  double exchangeRate = 11.00; // Tasa de cambio soles a bolívares
+  double exchangeRate = 10.80; // Tasa de cambio soles a bolívares
   double dollarParallelRate =
-      43.76; // Tasa de cambio bolívares a dólares paralelo
+      43.21; // Tasa de cambio bolívares a dólares paralelo
   double dollarBCVRate = 36.69; // Tasa de cambio bolívares a dólares BCV
 
   // Variable que debes modificar para actualizar la fecha y hora
-  String updateText = 'Actualización 12/09/2024';
+  String updateText = 'Actualización 13/09/2024';
 
   void _updateFields({String source = ''}) {
     double soles = double.tryParse(_solesController.text) ?? 0.0;
