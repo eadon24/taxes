@@ -70149,7 +70149,7 @@ s.e.j3(B.fZ)
 s.f.j3(B.fZ)
 s.r.j3(B.fZ)},
 WE(){var s,r=this
-A.og(new A.jG("      Calculadora EADON\n      Actualizaci\xf3n 23/11/2024\n      Cantidad en Soles  "+r.d.a.a+" - Tasa 14.1 Bs.\n      Cantidad en Bs. a Recibir: "+r.e.a.a+"\n      D\xf3lares (Paralelo) "+r.f.a.a+" - tasa 56.82 Bs. \n      D\xf3lares (BCV) "+r.r.a.a+" - tasa 46.06 Bs.  \n    "))
+A.og(new A.jG("      Calculadora EADON\n      Actualizaci\xf3n 2/11/2024\n      Cantidad en Soles  "+r.d.a.a+" - Tasa 14.1 Bs.\n      Cantidad en Bs. a Recibir: "+r.e.a.a+"\n      D\xf3lares (Paralelo) "+r.f.a.a+" - tasa 56.82 Bs. \n      D\xf3lares (BCV) "+r.r.a.a+" - tasa 46.06 Bs.  \n    "))
 s=r.c.al(t.Pu)
 s.toString
 s.f.Ea(B.K4)},
@@ -72878,7 +72878,7 @@ B.zJ=new A.k(4290190364)
 B.FK=new A.cE([50,B.A2,100,B.A1,200,B.zV,300,B.zQ,400,B.zU,500,B.zY,600,B.zP,700,B.kE,800,B.zL,900,B.zJ],t.pl)
 B.FQ=new A.v3(B.FK,4294198070)
 B.M4=new A.j(!0,B.FQ,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.P6=new A.h3("Actualizaci\xf3n 23/11/2024",null,B.M4,null,null,null,null,null,null)
+B.P6=new A.h3("Actualizaci\xf3n 25/11/2024",null,B.M4,null,null,null,null,null,null)
 B.fX=new A.kF(null,20,null,null)
 B.yV=new A.Cl(null)
 B.Dn=A.b(s([B.P6,B.fX,B.yV]),t.E)
