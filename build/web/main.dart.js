@@ -323,7 +323,7 @@ ax0(){var s,r=A.dg().b
 if(r==null)s=null
 else{r=r.canvasKitVariant
 if(r==null)r=null
-s=r}r=A.aze(A.arW(B.DT,s==null?"auto":s))
+s=r}r=A.aze(A.arW(B.DS,s==null?"auto":s))
 return new A.aa(r,new A.acy(),A.Y(r).j("aa<1,B>"))},
 ayA(a,b){return b+a},
 PD(){var s=0,r=A.Q(t.e),q,p,o,n,m
@@ -70112,7 +70112,7 @@ $0(){},
 $S:0}
 A.Cl.prototype={
 J(a){var s=null
-return A.oo(s,B.A9,B.B,s,new A.dz(A.M(B.c.a5(229.5),255,255,255),s,s,A.aek(10),A.b([new A.cT(2,B.dk,A.M(B.c.a5(127.5),158,158,158),B.Gk,5)],t.sq),s,B.b2),s,s,B.l_,s)}}
+return A.oo(s,B.A8,B.B,s,new A.dz(A.M(B.c.a5(229.5),255,255,255),s,s,A.aek(10),A.b([new A.cT(2,B.dk,A.M(B.c.a5(127.5),158,158,158),B.Gk,5)],t.sq),s,B.b2),s,s,B.l_,s)}}
 A.tV.prototype={
 ae(){var s=$.ah()
 return new A.yu(new A.nc(B.ef,s),new A.nc(B.ef,s),new A.nc(B.ef,s),new A.nc(B.ef,s))}}
@@ -70129,15 +70129,15 @@ o.c=r
 q=A.vD(p.r.a.a)
 if(q==null)q=0
 o.d=q
-if(a==="soles"){s=o.b=n*16.3
-o.c=s/64.22
-o.d=s/53.01}else if(a==="bolivares"){o.a=s/16.3
-o.c=s/64.22
-o.d=s/53.01}else if(a==="dollarParallel"){s=o.b=r*64.22
-o.a=s/16.3
-o.d=s/53.01}else if(a==="dollarBCV"){s=o.b=q*53.01
-o.a=s/16.3
-o.c=s/64.22}p.ad(new A.a7n(o,p,a))},
+if(a==="soles"){s=o.b=n*16.6
+o.c=s/65.65
+o.d=s/56.65}else if(a==="bolivares"){o.a=s/16.6
+o.c=s/65.65
+o.d=s/56.65}else if(a==="dollarParallel"){s=o.b=r*65.65
+o.a=s/16.6
+o.d=s/56.65}else if(a==="dollarBCV"){s=o.b=q*56.65
+o.a=s/16.6
+o.c=s/65.65}p.ad(new A.a7n(o,p,a))},
 rP(a){var s
 A.og(new A.jG(a))
 s=this.c.al(t.Pu)
@@ -70149,12 +70149,12 @@ s.e.j3(B.fZ)
 s.f.j3(B.fZ)
 s.r.j3(B.fZ)},
 WE(){var s,r=this
-A.og(new A.jG("      Calculadora EADON\n      Actualizaci\xf3n 07/01/2025\n      Cantidad en Soles  "+r.d.a.a+" - Tasa 16.3 Bs.\n      Cantidad en Bs. a Recibir: "+r.e.a.a+"\n      D\xf3lares (Paralelo) "+r.f.a.a+" - tasa 64.22 Bs. \n      D\xf3lares (BCV) "+r.r.a.a+" - tasa 53.01 Bs.  \n    "))
+A.og(new A.jG("      Calculadora EADON\n      Actualizaci\xf3n 27/01/2025\n      Cantidad en Soles  "+r.d.a.a+" - Tasa 16.6 Bs.\n      Cantidad en Bs. a Recibir: "+r.e.a.a+"\n      D\xf3lares (Paralelo) "+r.f.a.a+" - tasa 65.65 Bs. \n      D\xf3lares (BCV) "+r.r.a.a+" - tasa 56.65 Bs.  \n    "))
 s=r.c.al(t.Pu)
 s.toString
 s.f.Ea(B.K4)},
 J(a){var s=this,r=null
-return A.RQ(A.b([A.a3W(s.d,A.Ef(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.ck,"Tasa 16.3 Bs -  Soles a Enviar ",r,r,r,r,r,r,r,r,A.oK(r,B.f7,r,new A.a7o(s),r,r),r,r,r,r),B.h_,new A.a7p(s)),A.a3W(s.e,A.Ef(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.ck,"Cantidad en Bs. a Recibir ",r,r,r,r,r,r,r,r,A.oK(r,B.f7,r,new A.a7q(s),r,r),r,r,r,r),B.h_,new A.a7r(s)),A.a3W(s.f,A.Ef(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.ck,"D\xf3lar (Paralelo) - 64.22 Bs",r,r,r,r,r,r,r,r,A.oK(r,B.f7,r,new A.a7s(s),r,r),r,r,r,r),B.h_,new A.a7t(s)),A.a3W(s.r,A.Ef(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.ck,"D\xf3lar (BCV) - 53.01 Bs",r,r,r,r,r,r,r,r,A.oK(r,B.f7,r,new A.a7u(s),r,r),r,r,r,r),B.h_,new A.a7v(s)),B.fX,A.aiD(B.P7,s.ga3x(),A.aiE(r,r,B.zx,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.JV,A.aiD(B.P3,s.gWD(),A.aiE(r,r,B.kx,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cD,B.bd,B.ca)}}
+return A.RQ(A.b([A.a3W(s.d,A.Ef(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.ck,"Tasa 16.6 Bs -  Soles a Enviar ",r,r,r,r,r,r,r,r,A.oK(r,B.f7,r,new A.a7o(s),r,r),r,r,r,r),B.h_,new A.a7p(s)),A.a3W(s.e,A.Ef(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.ck,"Cantidad en Bs. a Recibir ",r,r,r,r,r,r,r,r,A.oK(r,B.f7,r,new A.a7q(s),r,r),r,r,r,r),B.h_,new A.a7r(s)),A.a3W(s.f,A.Ef(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.ck,"D\xf3lar (Paralelo) - 65.65 Bs",r,r,r,r,r,r,r,r,A.oK(r,B.f7,r,new A.a7s(s),r,r),r,r,r,r),B.h_,new A.a7t(s)),A.a3W(s.r,A.Ef(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.ck,"D\xf3lar (BCV) - 56.65 Bs",r,r,r,r,r,r,r,r,A.oK(r,B.f7,r,new A.a7u(s),r,r),r,r,r,r),B.h_,new A.a7v(s)),B.fX,A.aiD(B.P7,s.ga3x(),A.aiE(r,r,B.zx,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.JV,A.aiD(B.P4,s.gWD(),A.aiE(r,r,B.kx,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cD,B.bd,B.ca)}}
 A.a7n.prototype={
 $0(){var s=this,r=s.c
 if(r!=="soles")s.b.d.seL(B.c.a2(s.a.a,2))
@@ -72878,12 +72878,12 @@ B.zJ=new A.k(4290190364)
 B.FK=new A.cE([50,B.A2,100,B.A1,200,B.zV,300,B.zQ,400,B.zU,500,B.zY,600,B.zP,700,B.kE,800,B.zL,900,B.zJ],t.pl)
 B.FQ=new A.v3(B.FK,4294198070)
 B.M4=new A.j(!0,B.FQ,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.P6=new A.h3("Actualizaci\xf3n 07/01/2025",null,B.M4,null,null,null,null,null,null)
+B.P3=new A.h3("Actualizaci\xf3n 27/01/2025",null,B.M4,null,null,null,null,null,null)
 B.fX=new A.kF(null,20,null,null)
 B.yV=new A.Cl(null)
-B.DS=A.b(s([B.P6,B.fX,B.yV]),t.E)
-B.A8=new A.ok(B.aL,B.iA,B.ca,B.b4,null,B.cp,null,B.DS,null)
-B.z_=new A.ib(B.a2,null,null,B.A8,null)
+B.DT=A.b(s([B.P3,B.fX,B.yV]),t.E)
+B.A9=new A.ok(B.aL,B.iA,B.ca,B.b4,null,B.cp,null,B.DT,null)
+B.z_=new A.ib(B.a2,null,null,B.A9,null)
 B.z1=new A.rX(null,null,null,null,null,null,null,null,null)
 B.z2=new A.rY(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.km=new A.cV(0,B.p)
@@ -72979,7 +72979,7 @@ B.P2=new A.h3("Calculadora E-ADON",null,B.MQ,null,null,null,null,null,null)
 B.z0=new A.ib(B.a2,null,null,B.P2,null)
 B.Bn=new A.tV(null)
 B.De=A.b(s([B.z0,B.fX,B.Bn]),t.E)
-B.A9=new A.ok(B.aL,B.bd,B.ca,B.cD,null,B.cp,null,B.De,null)
+B.A8=new A.ok(B.aL,B.bd,B.ca,B.cD,null,B.cp,null,B.De,null)
 B.eI=new A.f4(0,"cut")
 B.eJ=new A.f4(1,"copy")
 B.eK=new A.f4(2,"paste")
@@ -73412,7 +73412,7 @@ B.lE=A.b(s([B.cP,B.cQ,B.cR,B.cS,B.iE,B.iF,B.iG,B.iH,B.qI]),A.ao("x<eF>"))
 B.yW=new A.o4(0,"auto")
 B.yX=new A.o4(1,"full")
 B.yY=new A.o4(2,"chromium")
-B.DT=A.b(s([B.yW,B.yX,B.yY]),A.ao("x<o4>"))
+B.DS=A.b(s([B.yW,B.yX,B.yY]),A.ao("x<o4>"))
 B.ff=A.b(s([0,0,24576,1023,65534,34815,65534,18431]),t.t)
 B.DU=A.b(s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0]),t.n)
 B.ad=new A.dp(0,"icon")
@@ -74686,11 +74686,11 @@ B.K2=new A.hI(3,"hide")
 B.Sg=new A.hI(4,"remove")
 B.wz=new A.hI(5,"timeout")
 B.K3=new A.pH(null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.P5=new A.h3("Montos copiados al portapapeles",null,null,null,null,null,null,null,null)
+B.P6=new A.h3("Montos copiados al portapapeles",null,null,null,null,null,null,null,null)
 B.kY=new A.aC(4e6)
-B.K4=new A.kH(B.P5,null,null,null,null,null,null,null,null,null,null,null,null,B.kY,null,null,null,B.aa,null)
-B.P4=new A.h3("Texto copiado al portapapeles",null,null,null,null,null,null,null,null)
-B.K5=new A.kH(B.P4,null,null,null,null,null,null,null,null,null,null,null,null,B.kY,null,null,null,B.aa,null)
+B.K4=new A.kH(B.P6,null,null,null,null,null,null,null,null,null,null,null,null,B.kY,null,null,null,B.aa,null)
+B.P5=new A.h3("Texto copiado al portapapeles",null,null,null,null,null,null,null,null)
+B.K5=new A.kH(B.P5,null,null,null,null,null,null,null,null,null,null,null,null,B.kY,null,null,null,B.aa,null)
 B.wA=new A.wN(0,"permissive")
 B.K6=new A.wN(1,"normal")
 B.K7=new A.wN(2,"forced")
@@ -75042,7 +75042,7 @@ B.Nx=new A.j(!0,B.o,null,"Roboto",B.J,null,null,null,null,null,null,null,null,nu
 B.NH=new A.j(!0,B.o,null,"Roboto",B.J,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackHelsinki labelSmall",null,null,null,null)
 B.P1=new A.cN(B.Ou,B.LA,B.MA,B.Nw,B.NJ,B.L_,B.M9,B.L3,B.Ng,B.NW,B.MK,B.NY,B.O8,B.Nx,B.NH)
 B.Lg=new A.j(!0,B.j,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.P3=new A.h3("Copiar Todos los Montos",null,B.Lg,null,null,null,null,null,null)
+B.P4=new A.h3("Copiar Todos los Montos",null,B.Lg,null,null,null,null,null,null)
 B.MT=new A.j(!0,B.o,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.P7=new A.h3("Reiniciar",null,B.MT,null,null,null,null,null,null)
 B.Si=new A.a4D(0,"system")
