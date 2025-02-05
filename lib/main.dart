@@ -120,13 +120,13 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   final TextEditingController _dollarBCVController = TextEditingController();
 
   // Variables que debes modificar para actualizar las tasas de cambio
-  double exchangeRate = 18.00; // Tasa de cambio soles a bolívares
+  double exchangeRate = 18.30; // Tasa de cambio soles a bolívares
   double dollarParallelRate =
-      71.31; // Tasa de cambio bolívares a dólares paralelo
-  double dollarBCVRate = 58.44; // Tasa de cambio bolívares a dólares BCV
+      72.09; // Tasa de cambio bolívares a dólares paralelo
+  double dollarBCVRate = 58.69; // Tasa de cambio bolívares a dólares BCV
 
   // Variable que debes modificar para actualizar la fecha y hora
-  String updateText = 'Actualización 04/02/2025';
+  String updateText = 'Actualización 05/02/2025';
 
   void _updateFields({String source = ''}) {
     double soles = double.tryParse(_solesController.text) ?? 0.0;
