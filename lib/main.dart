@@ -120,7 +120,7 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   final TextEditingController _dollarBCVController = TextEditingController();
 
   // Variables que debes modificar para actualizar las tasas de cambio
-  double exchangeRate = 16.62; // Tasa de cambio soles a bolívares
+  double exchangeRate = 19.50; // Tasa de cambio soles a bolívares
   double dollarParallelRate =
       76.62; // Tasa de cambio bolívares a dólares paralelo
   double dollarBCVRate = 61.35; // Tasa de cambio bolívares a dólares BCV
