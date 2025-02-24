@@ -12,13 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Calculadora',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize:
-              const Size.fromHeight(200.0), // Aumenta la altura del AppBar
+          preferredSize: const Size.fromHeight(
+            200.0,
+          ), // Aumenta la altura del AppBar
           child: AppBar(
             backgroundColor: const Color(0xFF012779),
             flexibleSpace: Center(
@@ -26,11 +25,7 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const SizedBox(height: 20),
-                  Flexible(
-                      child: Image.asset(
-                    'assets/logo.png',
-                    scale: 2,
-                  )),
+                  Flexible(child: Image.asset('assets/logo.png', scale: 2)),
                 ],
               ),
             ),
@@ -91,10 +86,7 @@ class CalculatorContainer extends StatelessWidget {
           Center(
             child: Text(
               'Calculadora E-ADON',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
           ),
           SizedBox(height: 20),
@@ -122,7 +114,7 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   // Variables que debes modificar para actualizar las tasas de cambio
   double exchangeRate = 20.10; // Tasa de cambio soles a bolívares
   double dollarParallelRate =
-      79.08; // Tasa de cambio bolívares a dólares paralelo
+      79.62; // Tasa de cambio bolívares a dólares paralelo
   double dollarBCVRate = 63.41; // Tasa de cambio bolívares a dólares BCV
 
   // Variable que debes modificar para actualizar la fecha y hora
