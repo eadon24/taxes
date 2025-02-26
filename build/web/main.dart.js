@@ -71647,15 +71647,15 @@ o.c=r
 q=A.wi(p.r.a.a)
 if(q==null)q=0
 o.d=q
-if(a==="soles"){s=o.b=n*20.6
-o.c=s/81.14
-o.d=s/63.49}else if(a==="bolivares"){o.a=s/20.6
-o.c=s/81.14
-o.d=s/63.49}else if(a==="dollarParallel"){s=o.b=r*81.14
-o.a=s/20.6
-o.d=s/63.49}else if(a==="dollarBCV"){s=o.b=q*63.49
-o.a=s/20.6
-o.c=s/81.14}p.ae(new A.a8g(o,p,a))},
+if(a==="soles"){s=o.b=n*21
+o.c=s/82.3
+o.d=s/64.02}else if(a==="bolivares"){o.a=s/21
+o.c=s/82.3
+o.d=s/64.02}else if(a==="dollarParallel"){s=o.b=r*82.3
+o.a=s/21
+o.d=s/64.02}else if(a==="dollarBCV"){s=o.b=q*64.02
+o.a=s/21
+o.c=s/82.3}p.ae(new A.a8g(o,p,a))},
 tq(a){A.oD(new A.jU(a))
 this.c.ap(t.Pu).f.F6(B.KF)},
 a51(){var s=this
@@ -71664,10 +71664,10 @@ s.e.ji(B.h6)
 s.f.ji(B.h6)
 s.r.ji(B.h6)},
 Y5(){var s=this
-A.oD(new A.jU("      Calculadora EADON\n      Actualizaci\xf3n 25/02/2025\n      Cantidad en Soles  "+s.d.a.a+" - Tasa 20.6 Bs.\n      Cantidad en Bs. a Recibir: "+s.e.a.a+"\n      D\xf3lares (Paralelo) "+s.f.a.a+" - tasa 81.14 Bs. \n      D\xf3lares (BCV) "+s.r.a.a+" - tasa 63.49 Bs.  \n    "))
+A.oD(new A.jU("      Calculadora EADON\n      Actualizaci\xf3n 26/02/2025\n      Cantidad en Soles  "+s.d.a.a+" - Tasa 21 Bs.\n      Cantidad en Bs. a Recibir: "+s.e.a.a+"\n      D\xf3lares (Paralelo) "+s.f.a.a+" - tasa 82.3 Bs. \n      D\xf3lares (BCV) "+s.r.a.a+" - tasa 64.02 Bs.  \n    "))
 s.c.ap(t.Pu).f.F6(B.KG)},
 N(a){var s=this,r=null
-return A.Sg(A.c([A.a4P(s.d,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cp,"Tasa 20.6 Bs -  Soles a Enviar ",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fk,r,r,new A.a8h(s),r,r,r),r,r,r,r),B.h7,new A.a8i(s)),A.a4P(s.e,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cp,"Cantidad en Bs. a Recibir ",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fk,r,r,new A.a8j(s),r,r,r),r,r,r,r),B.h7,new A.a8k(s)),A.a4P(s.f,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cp,"D\xf3lar (Paralelo) - 81.14 Bs",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fk,r,r,new A.a8l(s),r,r,r),r,r,r,r),B.h7,new A.a8m(s)),A.a4P(s.r,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cp,"D\xf3lar (BCV) - 63.49 Bs",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fk,r,r,new A.a8n(s),r,r,r),r,r,r,r),B.h7,new A.a8o(s)),B.h4,A.ajq(B.PL,s.ga50(),A.ajr(r,r,B.Ae,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.Kv,A.ajq(B.PK,s.gY4(),A.ajr(r,r,B.kD,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cJ,B.bi,B.cg)}}
+return A.Sg(A.c([A.a4P(s.d,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cp,"Tasa 21 Bs -  Soles a Enviar ",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fk,r,r,new A.a8h(s),r,r,r),r,r,r,r),B.h7,new A.a8i(s)),A.a4P(s.e,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cp,"Cantidad en Bs. a Recibir ",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fk,r,r,new A.a8j(s),r,r,r),r,r,r,r),B.h7,new A.a8k(s)),A.a4P(s.f,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cp,"D\xf3lar (Paralelo) - 82.3 Bs",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fk,r,r,new A.a8l(s),r,r,r),r,r,r,r),B.h7,new A.a8m(s)),A.a4P(s.r,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cp,"D\xf3lar (BCV) - 64.02 Bs",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fk,r,r,new A.a8n(s),r,r,r),r,r,r,r),B.h7,new A.a8o(s)),B.h4,A.ajq(B.PL,s.ga50(),A.ajr(r,r,B.Ae,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.Kv,A.ajq(B.PK,s.gY4(),A.ajr(r,r,B.kD,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cJ,B.bi,B.cg)}}
 A.a8g.prototype={
 $0(){var s=this,r=s.c
 if(r!=="soles")s.b.d.seV(B.c.a1(s.a.a,2))
@@ -74434,7 +74434,7 @@ B.A9=new A.y(1,0.7176470588235294,0.10980392156862745,0.10980392156862745,B.h)
 B.Gc=new A.cw([50,B.A2,100,B.zG,200,B.zB,300,B.Aj,400,B.An,500,B.Ag,600,B.zX,700,B.kE,800,B.A1,900,B.A9],t.pl)
 B.Gh=new A.pq(B.Gc,1,0.9568627450980393,0.2627450980392157,0.21176470588235294,B.h)
 B.OM=new A.k(!0,B.Gh,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.PG=new A.hh("Actualizaci\xf3n 25/02/2025",null,B.OM,null,null,null,null,null,null)
+B.PG=new A.hh("Actualizaci\xf3n 26/02/2025",null,B.OM,null,null,null,null,null,null)
 B.h4=new A.kW(null,20,null,null)
 B.ze=new A.D2(null)
 B.DK=A.c(s([B.PG,B.h4,B.ze]),t.E)
