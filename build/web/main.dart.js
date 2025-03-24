@@ -71647,14 +71647,14 @@ o.c=r
 q=A.wi(p.r.a.a)
 if(q==null)q=0
 o.d=q
-if(a==="soles"){s=o.b=n*22.8
+if(a==="soles"){s=o.b=n*23
 o.c=s/88.09
-o.d=s/68.31}else if(a==="bolivares"){o.a=s/22.8
+o.d=s/68.31}else if(a==="bolivares"){o.a=s/23
 o.c=s/88.09
 o.d=s/68.31}else if(a==="dollarParallel"){s=o.b=r*88.09
-o.a=s/22.8
+o.a=s/23
 o.d=s/68.31}else if(a==="dollarBCV"){s=o.b=q*68.31
-o.a=s/22.8
+o.a=s/23
 o.c=s/88.09}p.ae(new A.a8g(o,p,a))},
 tq(a){A.oD(new A.jU(a))
 this.c.ap(t.Pu).f.F6(B.KF)},
@@ -71664,10 +71664,10 @@ s.e.ji(B.h6)
 s.f.ji(B.h6)
 s.r.ji(B.h6)},
 Y5(){var s=this
-A.oD(new A.jU("      Calculadora EADON\n      Actualizaci\xf3n 22/03/2025\n      Cantidad en Soles  "+s.d.a.a+" - Tasa 22.8 Bs.\n      Cantidad en Bs. a Recibir: "+s.e.a.a+"\n      D\xf3lares (Paralelo) "+s.f.a.a+" - tasa 88.09 Bs. \n      D\xf3lares (BCV) "+s.r.a.a+" - tasa 68.31 Bs.  \n    "))
+A.oD(new A.jU("      Calculadora EADON\n      Actualizaci\xf3n 24/03/2025\n      Cantidad en Soles  "+s.d.a.a+" - Tasa 23 Bs.\n      Cantidad en Bs. a Recibir: "+s.e.a.a+"\n      D\xf3lares (Paralelo) "+s.f.a.a+" - tasa 88.09 Bs. \n      D\xf3lares (BCV) "+s.r.a.a+" - tasa 68.31 Bs.  \n    "))
 s.c.ap(t.Pu).f.F6(B.KG)},
 N(a){var s=this,r=null
-return A.Sg(A.c([A.a4P(s.d,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cp,"Tasa 22.8 Bs -  Soles a Enviar ",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fk,r,r,new A.a8h(s),r,r,r),r,r,r,r),B.h7,new A.a8i(s)),A.a4P(s.e,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cp,"Cantidad en Bs. a Recibir ",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fk,r,r,new A.a8j(s),r,r,r),r,r,r,r),B.h7,new A.a8k(s)),A.a4P(s.f,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cp,"D\xf3lar (Paralelo) - 88.09 Bs",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fk,r,r,new A.a8l(s),r,r,r),r,r,r,r),B.h7,new A.a8m(s)),A.a4P(s.r,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cp,"D\xf3lar (BCV) - 68.31 Bs",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fk,r,r,new A.a8n(s),r,r,r),r,r,r,r),B.h7,new A.a8o(s)),B.h4,A.ajq(B.PL,s.ga50(),A.ajr(r,r,B.Ae,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.Kv,A.ajq(B.PJ,s.gY4(),A.ajr(r,r,B.kD,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cJ,B.bi,B.cg)}}
+return A.Sg(A.c([A.a4P(s.d,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cp,"Tasa 23 Bs -  Soles a Enviar ",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fk,r,r,new A.a8h(s),r,r,r),r,r,r,r),B.h7,new A.a8i(s)),A.a4P(s.e,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cp,"Cantidad en Bs. a Recibir ",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fk,r,r,new A.a8j(s),r,r,r),r,r,r,r),B.h7,new A.a8k(s)),A.a4P(s.f,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cp,"D\xf3lar (Paralelo) - 88.09 Bs",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fk,r,r,new A.a8l(s),r,r,r),r,r,r,r),B.h7,new A.a8m(s)),A.a4P(s.r,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cp,"D\xf3lar (BCV) - 68.31 Bs",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fk,r,r,new A.a8n(s),r,r,r),r,r,r,r),B.h7,new A.a8o(s)),B.h4,A.ajq(B.PL,s.ga50(),A.ajr(r,r,B.Ae,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.Kv,A.ajq(B.PJ,s.gY4(),A.ajr(r,r,B.kD,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cJ,B.bi,B.cg)}}
 A.a8g.prototype={
 $0(){var s=this,r=s.c
 if(r!=="soles")s.b.d.seV(B.c.a1(s.a.a,2))
@@ -74434,7 +74434,7 @@ B.A9=new A.y(1,0.7176470588235294,0.10980392156862745,0.10980392156862745,B.h)
 B.Gc=new A.cw([50,B.A2,100,B.zG,200,B.zB,300,B.Aj,400,B.An,500,B.Ag,600,B.zX,700,B.kE,800,B.A1,900,B.A9],t.pl)
 B.Gh=new A.pq(B.Gc,1,0.9568627450980393,0.2627450980392157,0.21176470588235294,B.h)
 B.OM=new A.k(!0,B.Gh,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.PK=new A.hh("Actualizaci\xf3n 22/03/2025",null,B.OM,null,null,null,null,null,null)
+B.PK=new A.hh("Actualizaci\xf3n 24/03/2025",null,B.OM,null,null,null,null,null,null)
 B.h4=new A.kW(null,20,null,null)
 B.ze=new A.D2(null)
 B.Es=A.c(s([B.PK,B.h4,B.ze]),t.E)
