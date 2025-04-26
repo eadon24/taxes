@@ -12423,7 +12423,7 @@ if(k==null)k=n?B.hN:B.kR
 if(h==null)h=k
 if(d==null)d=n?B.bL:B.k
 if(j==null)j=n?B.A6:B.zY
-if(d1==null){if(n)a3=B.zB
+if(d1==null){if(n)a3=B.zC
 else{p=d2.f.h(0,500)
 p.toString
 a3=p}if(n)p=B.cH
@@ -12434,7 +12434,7 @@ a6=a4?B.k:B.l
 a5=a5===B.a6?B.k:B.l
 a7=n?B.k:B.l
 a8=n?B.l:B.k
-d1=A.Se(p,o,B.zD,c6,c6,c6,a4?B.k:B.l,a8,c6,c6,a6,c6,c6,c6,a5,c6,c6,c6,a7,c6,c6,c6,c6,c6,c6,c6,d2,c6,c6,c6,c6,a3,c6,c6,c6,c6,d,c6,c6,c6,c6,c6,c6,c6,c6,c6,c6,c6,c6,c6)}a9=n?B.H:B.G
+d1=A.Se(p,o,B.zE,c6,c6,c6,a4?B.k:B.l,a8,c6,c6,a6,c6,c6,c6,a5,c6,c6,c6,a7,c6,c6,c6,c6,c6,c6,c6,d2,c6,c6,c6,c6,a3,c6,c6,c6,c6,d,c6,c6,c6,c6,c6,c6,c6,c6,c6,c6,c6,c6,c6)}a9=n?B.H:B.G
 if(n)b0=B.cH
 else{p=d2.f.h(0,50)
 p.toString
@@ -71667,7 +71667,7 @@ Y5(){var s=this
 A.oD(new A.jU("      Calculadora EADON\n      Actualizaci\xf3n 26-04-2025\n      Cantidad en Soles  "+s.d.a.a+" - Tasa 26.6 Bs.\n      Cantidad en Bs. a Recibir: "+s.e.a.a+"\n      D\xf3lares (Paralelo) "+s.f.a.a+" - tasa 104.96 Bs. \n      D\xf3lares (BCV) "+s.r.a.a+" - tasa 84.42 Bs.  \n    "))
 s.c.ap(t.Pu).f.F6(B.Ky)},
 N(a){var s=this,r=null
-return A.Sg(A.c([A.a4P(s.d,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cq,"Tasa 26.6 Bs -  Soles a Enviar ",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fl,r,r,new A.a8h(s),r,r,r),r,r,r,r),B.h7,new A.a8i(s)),A.a4P(s.e,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cq,"Cantidad en Bs. a Recibir ",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fl,r,r,new A.a8j(s),r,r,r),r,r,r,r),B.h7,new A.a8k(s)),A.a4P(s.f,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cq,"D\xf3lar (Paralelo) - 104.96 Bs",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fl,r,r,new A.a8l(s),r,r,r),r,r,r,r),B.h7,new A.a8m(s)),A.a4P(s.r,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cq,"D\xf3lar (BCV) - 84.42 Bs",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fl,r,r,new A.a8n(s),r,r,r),r,r,r,r),B.h7,new A.a8o(s)),B.el,A.ajq(B.PA,s.ga50(),A.ajr(r,r,B.zG,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.Kn,A.ajq(B.PC,s.gY4(),A.ajr(r,r,B.zs,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cK,B.bi,B.ch)}}
+return A.Sg(A.c([A.a4P(s.d,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cq,"Tasa 26.6 Bs -  Soles a Enviar ",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fl,r,r,new A.a8h(s),r,r,r),r,r,r,r),B.h7,new A.a8i(s)),A.a4P(s.e,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cq,"Cantidad en Bs. a Recibir ",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fl,r,r,new A.a8j(s),r,r,r),r,r,r,r),B.h7,new A.a8k(s)),A.a4P(s.f,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cq,"D\xf3lar (Paralelo) - 104.96 Bs",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fl,r,r,new A.a8l(s),r,r,r),r,r,r,r),B.h7,new A.a8m(s)),A.a4P(s.r,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cq,"D\xf3lar (BCV) - 84.42 Bs",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fl,r,r,new A.a8n(s),r,r,r),r,r,r,r),B.h7,new A.a8o(s)),B.el,A.ajq(B.PA,s.ga50(),A.ajr(r,r,B.zB,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.Kn,A.ajq(B.PC,s.gY4(),A.ajr(r,r,B.zs,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cK,B.bi,B.ch)}}
 A.a8g.prototype={
 $0(){var s=this,r=s.c
 if(r!=="soles")s.b.d.seV(B.c.a1(s.a.a,2))
@@ -74467,14 +74467,14 @@ B.zS=new A.z(1,0.9058823529411765,0.8784313725490196,0.9254901960784314,B.h)
 B.zq=new A.z(1,0.8705882352941177,0.8470588235294118,0.8823529411764706,B.h)
 B.A3=new A.z(1,0.9686274509803922,0.9490196078431372,0.9803921568627451,B.h)
 B.zI=new A.z(1,0.9529411764705882,0.9294117647058824,0.9686274509803922,B.h)
-B.zC=new A.z(1,0.9254901960784314,0.9019607843137255,0.9411764705882353,B.h)
+B.zD=new A.z(1,0.9254901960784314,0.9019607843137255,0.9411764705882353,B.h)
 B.eO=new A.z(1,0.9019607843137255,0.8784313725490196,0.9137254901960784,B.h)
 B.hL=new A.z(1,0.28627450980392155,0.27058823529411763,0.30980392156862746,B.h)
 B.zu=new A.z(1,0.4745098039215686,0.4549019607843137,0.49411764705882355,B.h)
 B.kE=new A.z(1,0.792156862745098,0.7686274509803922,0.8156862745098039,B.h)
 B.kZ=new A.z(1,0.19607843137254902,0.1843137254901961,0.20784313725490197,B.h)
 B.zN=new A.z(1,0.9607843137254902,0.9372549019607843,0.9686274509803922,B.h)
-B.zm=new A.oE(B.a4,B.hO,B.k,B.eN,B.eT,B.eN,B.dB,B.kY,B.eT,B.zo,B.k,B.eR,B.eQ,B.eR,B.hM,B.kH,B.eQ,B.zQ,B.k,B.eK,B.eJ,B.eK,B.hK,B.kM,B.eJ,B.zT,B.k,B.kJ,B.kU,B.hS,B.hI,B.zS,B.zq,B.hS,B.k,B.A3,B.zI,B.zC,B.eO,B.hL,B.zu,B.kE,B.l,B.l,B.kZ,B.zN,B.dB,B.hO,B.hS,B.hI)
+B.zm=new A.oE(B.a4,B.hO,B.k,B.eN,B.eT,B.eN,B.dB,B.kY,B.eT,B.zo,B.k,B.eR,B.eQ,B.eR,B.hM,B.kH,B.eQ,B.zQ,B.k,B.eK,B.eJ,B.eK,B.hK,B.kM,B.eJ,B.zT,B.k,B.kJ,B.kU,B.hS,B.hI,B.zS,B.zq,B.hS,B.k,B.A3,B.zI,B.zD,B.eO,B.hL,B.zu,B.kE,B.l,B.l,B.kZ,B.zN,B.dB,B.hO,B.hS,B.hI)
 B.zH=new A.z(1,0.2196078431372549,0.11764705882352941,0.4470588235294118,B.h)
 B.zO=new A.z(1,0.2,0.17647058823529413,0.2549019607843137,B.h)
 B.zv=new A.z(1,0.28627450980392155,0.1450980392156863,0.19607843137254902,B.h)
@@ -74491,12 +74491,12 @@ B.zn=new A.oE(B.a6,B.dB,B.zH,B.eT,B.eN,B.eN,B.dB,B.kY,B.eT,B.hM,B.zO,B.eQ,B.eR,B
 B.zs=new A.z(1,0.07058823529411765,0.07058823529411765,0.07058823529411765,B.h)
 B.cH=new A.z(1,0.3803921568627451,0.3803921568627451,0.3803921568627451,B.h)
 B.zw=new A.z(0.4,0.7843137254901961,0.7843137254901961,0.7843137254901961,B.h)
-B.zB=new A.z(1,0.39215686274509803,1,0.8549019607843137,B.h)
-B.zD=new A.z(1,0.8274509803921568,0.1843137254901961,0.1843137254901961,B.h)
+B.zB=new A.z(1,0.40784313725490196,0.37254901960784315,0.9333333333333333,B.h)
+B.zC=new A.z(1,0.39215686274509803,1,0.8549019607843137,B.h)
+B.zE=new A.z(1,0.8274509803921568,0.1843137254901961,0.1843137254901961,B.h)
 B.kD=new A.z(1,0.12941176470588237,0.12941176470588237,0.12941176470588237,B.h)
 B.D=new A.z(0,0,0,0,B.h)
 B.kF=new A.z(0,1,1,1,B.h)
-B.zG=new A.z(1,0.6745098039215687,0.4196078431372549,0.996078431372549,B.h)
 B.zK=new A.z(0.03137254901960784,0,0,0,B.h)
 B.bL=new A.z(1,0.25882352941176473,0.25882352941176473,0.25882352941176473,B.h)
 B.G=new A.z(0.5411764705882353,0,0,0,B.h)
@@ -75887,14 +75887,14 @@ B.G9=new A.vE(null,null,null,null,null,null,null,null)
 B.zy=new A.z(1,0.8901960784313725,0.9490196078431372,0.9921568627450981,B.h)
 B.A7=new A.z(1,0.7333333333333333,0.8705882352941177,0.984313725490196,B.h)
 B.zP=new A.z(1,0.5647058823529412,0.792156862745098,0.9764705882352941,B.h)
-B.zE=new A.z(1,0.39215686274509803,0.7098039215686275,0.9647058823529412,B.h)
+B.zF=new A.z(1,0.39215686274509803,0.7098039215686275,0.9647058823529412,B.h)
 B.zM=new A.z(1,0.25882352941176473,0.6470588235294118,0.9607843137254902,B.h)
 B.zL=new A.z(1,0.12941176470588237,0.5882352941176471,0.9529411764705882,B.h)
 B.zX=new A.z(1,0.11764705882352941,0.5333333333333333,0.8980392156862745,B.h)
 B.Aa=new A.z(1,0.09803921568627451,0.4627450980392157,0.8235294117647058,B.h)
 B.Af=new A.z(1,0.08235294117647059,0.396078431372549,0.7529411764705882,B.h)
 B.zW=new A.z(1,0.050980392156862744,0.2784313725490196,0.6313725490196078,B.h)
-B.G6=new A.cH([50,B.zy,100,B.A7,200,B.zP,300,B.zE,400,B.zM,500,B.zL,600,B.zX,700,B.Aa,800,B.Af,900,B.zW],t.pl)
+B.G6=new A.cH([50,B.zy,100,B.A7,200,B.zP,300,B.zF,400,B.zM,500,B.zL,600,B.zX,700,B.Aa,800,B.Af,900,B.zW],t.pl)
 B.iR=new A.vF(B.G6,1,0.12941176470588237,0.5882352941176471,0.9529411764705882,B.h)
 B.A0=new A.z(1,0.9607843137254902,0.9607843137254902,0.9607843137254902,B.h)
 B.zV=new A.z(1,0.9333333333333333,0.9333333333333333,0.9333333333333333,B.h)
@@ -76612,8 +76612,8 @@ B.On=new A.k(!0,B.E,null,".AppleSystemUIFont",null,null,null,null,null,null,null
 B.OG=new A.k(!0,B.l,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackRedwoodCity labelMedium",null,null,null,null)
 B.LG=new A.k(!0,B.l,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackRedwoodCity labelSmall",null,null,null,null)
 B.Px=new A.cR(B.Nl,B.Mp,B.Nm,B.NV,B.M2,B.Ma,B.MJ,B.NI,B.MX,B.Or,B.Lw,B.LS,B.On,B.OG,B.LG)
-B.zF=new A.z(1,0.9647058823529412,0.9568627450980393,0.9568627450980393,B.h)
-B.LN=new A.k(!0,B.zF,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.zG=new A.z(1,0.9647058823529412,0.9568627450980393,0.9568627450980393,B.h)
+B.LN=new A.k(!0,B.zG,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.PA=new A.hh("Reiniciar",null,B.LN,null,null,null,null,null,null)
 B.OF=new A.k(!0,B.k,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.PC=new A.hh("Copiar Todos los Montos",null,B.OF,null,null,null,null,null,null)

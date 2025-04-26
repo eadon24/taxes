@@ -253,7 +253,7 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
         ElevatedButton(
           onPressed: _resetFields,
           style: ElevatedButton.styleFrom(
-            backgroundColor: const Color(0xFFAC6BFE),
+            backgroundColor: const Color(0xFF685FEE),
           ),
           child: const Text(
             'Reiniciar',
