@@ -251,7 +251,7 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
         ElevatedButton(
           onPressed: _resetFields,
           style: ElevatedButton.styleFrom(
-            backgroundColor: const Color(0xFF4AFC92),
+            backgroundColor: const Color(0xFFAC6BFE),
           ),
           child: const Text(
             'Reiniciar',
@@ -262,7 +262,7 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
         ElevatedButton(
           onPressed: _copyAllValues,
           style: ElevatedButton.styleFrom(
-            backgroundColor: const Color(0xFF012779),
+            backgroundColor: const Color(0xFF121212),
           ),
           child: const Text(
             'Copiar Todos los Montos',
