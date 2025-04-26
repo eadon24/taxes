@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
             200.0,
           ), // Aumenta la altura del AppBar
           child: AppBar(
-            backgroundColor: const Color(0xFF012779),
+            backgroundColor: const Color.fromARGB(255, 14, 14, 14),
             flexibleSpace: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
               children: [
                 Text(
                   'Actualización 26-04-2025',
-                  style: TextStyle(color: Colors.red),
+                  style: TextStyle(color: Color.fromARGB(255, 40, 201, 97)),
                 ),
                 SizedBox(height: 20),
                 CalculatorContainer(),
@@ -255,7 +255,8 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
           ),
           child: const Text(
             'Reiniciar',
-            style: TextStyle(color: Colors.black, fontSize: 16.0),
+            style: TextStyle(
+                color: Color.fromARGB(255, 246, 244, 244), fontSize: 16.0),
           ),
         ),
         const SizedBox(height: 10),
