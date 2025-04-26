@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
                 children: [
                   const SizedBox(height: 20),
                   Flexible(child: Image.asset('assets/logo.png', scale: 2)),
+                  const SizedBox(height: 20),
                 ],
               ),
             ),
