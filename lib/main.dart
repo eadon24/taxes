@@ -46,10 +46,11 @@ class MyApp extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  'Actualización 26-04-2025',
-                  style: TextStyle(color: Color.fromARGB(255, 40, 201, 97)),
-                ),
+                Text('Actualización 26-04-2025',
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 8, 8, 8),
+                      fontWeight: FontWeight.bold,
+                    )),
                 SizedBox(height: 20),
                 CalculatorContainer(),
               ],
