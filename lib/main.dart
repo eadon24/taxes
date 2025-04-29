@@ -47,11 +47,13 @@ class MyApp extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('Actualización 26-04-2025',
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 8, 8, 8),
-                      fontWeight: FontWeight.bold,
-                    )),
+                Text(
+                  'Actualización 29-04-2025',
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 8, 8, 8),
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
                 SizedBox(height: 20),
                 CalculatorContainer(),
               ],
@@ -114,14 +116,14 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   final TextEditingController _dollarBCVController = TextEditingController();
 
   // Variables que debes modificar para actualizar las tasas de cambio
-  double exchangeRate = 26.60; // Tasa de cambio soles a bolívares
+  double exchangeRate = 28.00; // Tasa de cambio soles a bolívares
   double dollarParallelRate =
-      104.96; // Tasa de cambio bolívares a dólares paralelo
-  double dollarBCVRate = 84.42; // Tasa de cambio bolívares a dólares BCV
+      109.00; // Tasa de cambio bolívares a dólares paralelo
+  double dollarBCVRate = 86.66; // Tasa de cambio bolívares a dólares BCV
 
   // Variable que debes modificar para actualiza
   //r la fecha y hora
-  String updateText = 'Actualización 26-04-2025';
+  String updateText = 'Actualización 29-04-2025';
 
   void _updateFields({String source = ''}) {
     double soles = double.tryParse(_solesController.text) ?? 0.0;
@@ -258,7 +260,9 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
           child: const Text(
             'Reiniciar',
             style: TextStyle(
-                color: Color.fromARGB(255, 246, 244, 244), fontSize: 16.0),
+              color: Color.fromARGB(255, 246, 244, 244),
+              fontSize: 16.0,
+            ),
           ),
         ),
         const SizedBox(height: 10),
