@@ -71647,15 +71647,15 @@ o.c=r
 q=A.wi(p.r.a.a)
 if(q==null)q=0
 o.d=q
-if(a==="soles"){s=o.b=n*30.2
-o.c=s/118.75
-o.d=s/94.16}else if(a==="bolivares"){o.a=s/30.2
-o.c=s/118.75
-o.d=s/94.16}else if(a==="dollarParallel"){s=o.b=r*118.75
-o.a=s/30.2
-o.d=s/94.16}else if(a==="dollarBCV"){s=o.b=q*94.16
-o.a=s/30.2
-o.c=s/118.75}p.ae(new A.a8g(o,p,a))},
+if(a==="soles"){s=o.b=n*30.7
+o.c=s/119.9
+o.d=s/94.32}else if(a==="bolivares"){o.a=s/30.7
+o.c=s/119.9
+o.d=s/94.32}else if(a==="dollarParallel"){s=o.b=r*119.9
+o.a=s/30.7
+o.d=s/94.32}else if(a==="dollarBCV"){s=o.b=q*94.32
+o.a=s/30.7
+o.c=s/119.9}p.ae(new A.a8g(o,p,a))},
 tq(a){A.oD(new A.jU(a))
 this.c.ap(t.Pu).f.F6(B.Kx)},
 a51(){var s=this
@@ -71664,10 +71664,10 @@ s.e.ji(B.h6)
 s.f.ji(B.h6)
 s.r.ji(B.h6)},
 Y5(){var s=this
-A.oD(new A.jU("      Calculadora EADON\n      Actualizaci\xf3n 15-05-2025\n      Cantidad en Soles  "+s.d.a.a+" - Tasa 30.2 Bs.\n      Cantidad en Bs. a Recibir: "+s.e.a.a+"\n      D\xf3lares (Paralelo) "+s.f.a.a+" - tasa 118.75 Bs. \n      D\xf3lares (BCV) "+s.r.a.a+" - tasa 94.16 Bs.  \n    "))
+A.oD(new A.jU("      Calculadora EADON\n      Actualizaci\xf3n 16-05-2025\n      Cantidad en Soles  "+s.d.a.a+" - Tasa 30.7 Bs.\n      Cantidad en Bs. a Recibir: "+s.e.a.a+"\n      D\xf3lares (Paralelo) "+s.f.a.a+" - tasa 119.9 Bs. \n      D\xf3lares (BCV) "+s.r.a.a+" - tasa 94.32 Bs.  \n    "))
 s.c.ap(t.Pu).f.F6(B.Ky)},
 N(a){var s=this,r=null
-return A.Sg(A.c([A.a4P(s.d,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cq,"Tasa 30.2 Bs -  Soles a Enviar ",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fl,r,r,new A.a8h(s),r,r,r),r,r,r,r),B.h7,new A.a8i(s)),A.a4P(s.e,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cq,"Cantidad en Bs. a Recibir ",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fl,r,r,new A.a8j(s),r,r,r),r,r,r,r),B.h7,new A.a8k(s)),A.a4P(s.f,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cq,"D\xf3lar (Paralelo) - 118.75 Bs",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fl,r,r,new A.a8l(s),r,r,r),r,r,r,r),B.h7,new A.a8m(s)),A.a4P(s.r,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cq,"D\xf3lar (BCV) - 94.16 Bs",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fl,r,r,new A.a8n(s),r,r,r),r,r,r,r),B.h7,new A.a8o(s)),B.el,A.ajq(B.PB,s.ga50(),A.ajr(r,r,B.zB,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.Kn,A.ajq(B.PD,s.gY4(),A.ajr(r,r,B.zs,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cK,B.bi,B.ch)}}
+return A.Sg(A.c([A.a4P(s.d,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cq,"Tasa 30.7 Bs -  Soles a Enviar ",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fl,r,r,new A.a8h(s),r,r,r),r,r,r,r),B.h7,new A.a8i(s)),A.a4P(s.e,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cq,"Cantidad en Bs. a Recibir ",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fl,r,r,new A.a8j(s),r,r,r),r,r,r,r),B.h7,new A.a8k(s)),A.a4P(s.f,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cq,"D\xf3lar (Paralelo) - 119.9 Bs",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fl,r,r,new A.a8l(s),r,r,r),r,r,r,r),B.h7,new A.a8m(s)),A.a4P(s.r,A.EY(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.cq,"D\xf3lar (BCV) - 94.32 Bs",!0,r,r,r,r,r,r,r,r,A.p8(r,r,B.fl,r,r,new A.a8n(s),r,r,r),r,r,r,r),B.h7,new A.a8o(s)),B.el,A.ajq(B.PB,s.ga50(),A.ajr(r,r,B.zB,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.Kn,A.ajq(B.PD,s.gY4(),A.ajr(r,r,B.zs,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cK,B.bi,B.ch)}}
 A.a8g.prototype={
 $0(){var s=this,r=s.c
 if(r!=="soles")s.b.d.seV(B.c.a1(s.a.a,2))
@@ -74424,7 +74424,7 @@ B.J=new A.oz(0,"none")
 B.Ad=new A.z(1,0.03137254901960784,0.03137254901960784,0.03137254901960784,B.h)
 B.c7=new A.ff(6)
 B.O8=new A.k(!0,B.Ad,null,null,null,null,null,B.c7,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Py=new A.hh("Actualizaci\xf3n 15-05-2025",null,B.O8,null,null,null,null,null,null)
+B.Py=new A.hh("Actualizaci\xf3n 16-05-2025",null,B.O8,null,null,null,null,null,null)
 B.el=new A.kW(null,20,null,null)
 B.zc=new A.D2(null)
 B.Eg=A.c(s([B.Py,B.el,B.zc]),t.E)
