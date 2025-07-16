@@ -15,9 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.blue),
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(
-            200.0,
-          ), // Aumenta la altura del AppBar
+          preferredSize: const Size.fromHeight(200.0),
           child: AppBar(
             backgroundColor: const Color.fromARGB(255, 14, 14, 14),
             flexibleSpace: Center(
@@ -33,9 +31,7 @@ class MyApp extends StatelessWidget {
             actions: <Widget>[
               IconButton(
                 icon: const Icon(Icons.settings),
-                onPressed: () {
-                  // Acción para el icono de configuración
-                },
+                onPressed: () {},
               ),
             ],
           ),
@@ -48,7 +44,7 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Actualización 31-05-2025',
+                  'Actualización 16-07-2025',
                   style: TextStyle(
                     color: Color.fromARGB(255, 8, 8, 8),
                     fontWeight: FontWeight.bold,
@@ -111,56 +107,34 @@ class ExchangeCalculator extends StatefulWidget {
 class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   final TextEditingController _solesController = TextEditingController();
   final TextEditingController _bolivaresController = TextEditingController();
-  final TextEditingController _dollarParallelController =
-      TextEditingController();
   final TextEditingController _dollarBCVController = TextEditingController();
 
-  // Variables que debes modificar para actualizar las tasas de cambio
-  double exchangeRate = 32.40; // Tasa de cambio soles a bolívares
-  double dollarParallelRate =
-      135.75; // Tasa de cambio bolívares a dólares paralelo
-  double dollarBCVRate = 97.31; // Tasa de cambio bolívares a dólares BCV
-
-  // Variable que debes modificar para actualiza
-  //r la fecha y hora
-  String updateText = 'Actualización 31-05-2025';
+  double exchangeRate = 40.00; // Tasa de cambio soles a bolívares
+  double dollarBCVRate = 116.82; // Tasa de cambio bolívares a dólares BCV
+  String updateText = 'Actualización 16-07-2025';
 
   void _updateFields({String source = ''}) {
     double soles = double.tryParse(_solesController.text) ?? 0.0;
     double bolivares = double.tryParse(_bolivaresController.text) ?? 0.0;
-    double dollarsParallel =
-        double.tryParse(_dollarParallelController.text) ?? 0.0;
     double dollarsBCV = double.tryParse(_dollarBCVController.text) ?? 0.0;
 
     if (source == 'soles') {
       bolivares = soles * exchangeRate;
-      dollarsParallel = bolivares / dollarParallelRate;
       dollarsBCV = bolivares / dollarBCVRate;
     } else if (source == 'bolivares') {
-      soles = bolivares / exchangeRate;
-      dollarsParallel = bolivares / dollarParallelRate;
-      dollarsBCV = bolivares / dollarBCVRate;
-    } else if (source == 'dollarParallel') {
-      bolivares = dollarsParallel * dollarParallelRate;
       soles = bolivares / exchangeRate;
       dollarsBCV = bolivares / dollarBCVRate;
     } else if (source == 'dollarBCV') {
       bolivares = dollarsBCV * dollarBCVRate;
       soles = bolivares / exchangeRate;
-      dollarsParallel = bolivares / dollarParallelRate;
     }
 
     setState(() {
       if (source != 'soles') _solesController.text = soles.toStringAsFixed(2);
-      if (source != 'bolivares') {
+      if (source != 'bolivares')
         _bolivaresController.text = bolivares.toStringAsFixed(2);
-      }
-      if (source != 'dollarParallel') {
-        _dollarParallelController.text = dollarsParallel.toStringAsFixed(2);
-      }
-      if (source != 'dollarBCV') {
+      if (source != 'dollarBCV')
         _dollarBCVController.text = dollarsBCV.toStringAsFixed(2);
-      }
     });
   }
 
@@ -174,20 +148,17 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   void _resetFields() {
     _solesController.clear();
     _bolivaresController.clear();
-    _dollarParallelController.clear();
     _dollarBCVController.clear();
   }
 
   void _copyAllValues() {
     String allValues = """
-      Calculadora EADON
-      $updateText
-      Cantidad en Soles  ${_solesController.text} - Tasa $exchangeRate Bs.
-      Cantidad en Bs. a Recibir: ${_bolivaresController.text}
-      Dólares (Paralelo) ${_dollarParallelController.text} - tasa $dollarParallelRate Bs. 
-      Dólares (BCV) ${_dollarBCVController.text} - tasa $dollarBCVRate Bs.  
-    """;
-
+Calculadora EADON
+$updateText
+Cantidad en Soles: ${_solesController.text} - Tasa: $exchangeRate Bs.
+Cantidad en Bs. a Recibir: ${_bolivaresController.text}
+Dólares (BCV): ${_dollarBCVController.text} - Tasa: $dollarBCVRate Bs.
+""";
     Clipboard.setData(ClipboardData(text: allValues));
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text('Montos copiados al portapapeles')),
@@ -203,7 +174,7 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
           controller: _solesController,
           keyboardType: TextInputType.number,
           decoration: InputDecoration(
-            labelText: 'Tasa $exchangeRate Bs -  Soles a Enviar ',
+            labelText: 'Tasa $exchangeRate Bs - Soles a Enviar',
             labelStyle: const TextStyle(fontWeight: FontWeight.bold),
             suffixIcon: IconButton(
               icon: const Icon(Icons.content_copy),
@@ -216,7 +187,7 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
           controller: _bolivaresController,
           keyboardType: TextInputType.number,
           decoration: InputDecoration(
-            labelText: 'Cantidad en Bs. a Recibir ',
+            labelText: 'Cantidad en Bs. a Recibir',
             labelStyle: const TextStyle(fontWeight: FontWeight.bold),
             suffixIcon: IconButton(
               icon: const Icon(Icons.content_copy),
@@ -224,19 +195,6 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
             ),
           ),
           onChanged: (value) => _updateFields(source: 'bolivares'),
-        ),
-        TextField(
-          controller: _dollarParallelController,
-          keyboardType: TextInputType.number,
-          decoration: InputDecoration(
-            labelText: 'Dólar (Paralelo) - $dollarParallelRate Bs',
-            labelStyle: const TextStyle(fontWeight: FontWeight.bold),
-            suffixIcon: IconButton(
-              icon: const Icon(Icons.content_copy),
-              onPressed: () => _copyToClipboard(_dollarParallelController.text),
-            ),
-          ),
-          onChanged: (value) => _updateFields(source: 'dollarParallel'),
         ),
         TextField(
           controller: _dollarBCVController,
