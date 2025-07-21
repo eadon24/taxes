@@ -71641,22 +71641,22 @@ p.b=s
 r=A.G9(q.f.a.a)
 if(r==null)r=0
 p.c=r
-if(a==="soles"){s=o*40.3
+if(a==="soles"){s=o*40.5
 p.b=s
-p.c=s/119.14}else if(a==="bolivares"){p.a=s/40.3
+p.c=s/119.14}else if(a==="bolivares"){p.a=s/40.5
 p.c=s/119.14}else if(a==="dollarBCV"){s=r*119.14
 p.b=s
-p.a=s/40.3}q.ae(new A.a8f(p,q,a))},
+p.a=s/40.5}q.ae(new A.a8f(p,q,a))},
 yQ(a){A.oC(new A.jU(a))
 this.c.ap(t.Pu).f.F6(B.Kx)},
 a51(){this.d.kg(B.ju)
 this.e.kg(B.ju)
 this.f.kg(B.ju)},
 Y5(){var s=this
-A.oC(new A.jU("Calculadora EADON\nActualizaci\xf3n 19-07-2025\nCantidad en Soles: "+s.d.a.a+" - Tasa: 40.3 Bs.\nCantidad en Bs. a Recibir: "+s.e.a.a+"\nD\xf3lares (BCV): "+s.f.a.a+" - Tasa: 119.14 Bs.\n"))
+A.oC(new A.jU("Calculadora EADON\nActualizaci\xf3n 21-07-2025\nCantidad en Soles: "+s.d.a.a+" - Tasa: 40.5 Bs.\nCantidad en Bs. a Recibir: "+s.e.a.a+"\nD\xf3lares (BCV): "+s.f.a.a+" - Tasa: 119.14 Bs.\n"))
 s.c.ap(t.Pu).f.F6(B.Ky)},
 N(a){var s=this,r=null
-return A.Sf(A.c([A.agA(s.d,A.WQ(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.db,"Tasa 40.3 Bs - Soles a Enviar",!0,r,r,r,r,r,r,r,r,A.uX(r,r,B.iq,r,r,new A.a8g(s),r,r,r),r,r,r,r),B.jw,new A.a8h(s)),A.agA(s.e,A.WQ(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.db,"Cantidad en Bs. a Recibir",!0,r,r,r,r,r,r,r,r,A.uX(r,r,B.iq,r,r,new A.a8i(s),r,r,r),r,r,r,r),B.jw,new A.a8j(s)),A.agA(s.f,A.WQ(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.db,"D\xf3lar (BCV) - 119.14 Bs",!0,r,r,r,r,r,r,r,r,A.uX(r,r,B.iq,r,r,new A.a8k(s),r,r,r),r,r,r,r),B.jw,new A.a8l(s)),B.el,A.ajo(B.PA,s.ga50(),A.ajp(r,r,B.zB,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.Kn,A.ajo(B.PC,s.gY4(),A.ajp(r,r,B.zs,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cJ,B.bi,B.ch)}}
+return A.Sf(A.c([A.agA(s.d,A.WQ(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.db,"Tasa 40.5 Bs - Soles a Enviar",!0,r,r,r,r,r,r,r,r,A.uX(r,r,B.iq,r,r,new A.a8g(s),r,r,r),r,r,r,r),B.jw,new A.a8h(s)),A.agA(s.e,A.WQ(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.db,"Cantidad en Bs. a Recibir",!0,r,r,r,r,r,r,r,r,A.uX(r,r,B.iq,r,r,new A.a8i(s),r,r,r),r,r,r,r),B.jw,new A.a8j(s)),A.agA(s.f,A.WQ(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.db,"D\xf3lar (BCV) - 119.14 Bs",!0,r,r,r,r,r,r,r,r,A.uX(r,r,B.iq,r,r,new A.a8k(s),r,r,r),r,r,r,r),B.jw,new A.a8l(s)),B.el,A.ajo(B.PB,s.ga50(),A.ajp(r,r,B.zB,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.Kn,A.ajo(B.PD,s.gY4(),A.ajp(r,r,B.zs,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cJ,B.bi,B.ch)}}
 A.a8f.prototype={
 $0(){var s=this,r=s.c
 if(r!=="soles")s.b.d.sfg(B.c.a2(s.a.a,2))
@@ -74405,11 +74405,11 @@ B.J=new A.oy(0,"none")
 B.Ad=new A.z(1,0.03137254901960784,0.03137254901960784,0.03137254901960784,B.h)
 B.c7=new A.ff(6)
 B.O8=new A.k(!0,B.Ad,null,null,null,null,null,B.c7,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.PD=new A.hh("Actualizaci\xf3n 19-07-2025",null,B.O8,null,null,null,null,null,null)
+B.Py=new A.hh("Actualizaci\xf3n 21-07-2025",null,B.O8,null,null,null,null,null,null)
 B.el=new A.kW(null,20,null,null)
 B.zc=new A.D1(null)
-B.Eg=A.c(s([B.PD,B.el,B.zc]),t.E)
-B.Ai=new A.oG(B.aT,B.iM,B.ch,B.b6,null,B.cu,null,0,B.Eg,null)
+B.Ek=A.c(s([B.Py,B.el,B.zc]),t.E)
+B.Ai=new A.oG(B.aT,B.iM,B.ch,B.b6,null,B.cu,null,0,B.Ek,null)
 B.zi=new A.iv(B.a3,null,null,B.Ai,null)
 B.zj=new A.tw(null,null,null,null,null,null,null,null,null)
 B.zk=new A.tx(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
@@ -74502,8 +74502,8 @@ B.Ah=new A.z(0.9411764705882353,0.7529411764705882,0.7529411764705882,0.75294117
 B.bi=new A.kv(0,"start")
 B.cJ=new A.m3(3,"stretch")
 B.M9=new A.k(!0,null,null,null,null,null,24,B.c7,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Pz=new A.hh("Calculadora E-ADON",null,B.M9,null,null,null,null,null,null)
-B.zh=new A.iv(B.a3,null,null,B.Pz,null)
+B.PA=new A.hh("Calculadora E-ADON",null,B.M9,null,null,null,null,null,null)
+B.zh=new A.iv(B.a3,null,null,B.PA,null)
 B.BA=new A.uy(null)
 B.Em=A.c(s([B.zh,B.el,B.BA]),t.E)
 B.Aj=new A.oG(B.aT,B.bi,B.ch,B.cJ,null,B.cu,null,0,B.Em,null)
@@ -74858,8 +74858,8 @@ B.Ef=A.c(s([137,80,78,71,13,10,26,10]),t.Z)
 B.Ca=new A.kg(0,"png")
 B.Ci=new A.hI(B.Ca,!1,0,"png")
 B.C8=new A.iK(B.Ef,B.Ci,0,"png")
-B.Eh=A.c(s([71,73,70,56,55,97]),t.Z)
-B.C7=new A.iK(B.Eh,B.fk,1,"gif87a")
+B.Eg=A.c(s([71,73,70,56,55,97]),t.Z)
+B.C7=new A.iK(B.Eg,B.fk,1,"gif87a")
 B.DN=A.c(s([71,73,70,56,57,97]),t.Z)
 B.C6=new A.iK(B.DN,B.fk,2,"gif89a")
 B.CK=A.c(s([255,216,255]),t.Z)
@@ -75556,7 +75556,7 @@ B.E7=A.c(s([B.qA,null,null,B.qP]),t.L)
 B.Du=A.c(s([B.qB,null,null,B.qQ]),t.L)
 B.DL=A.c(s([B.qC,null,null,B.cc]),t.L)
 B.CH=A.c(s([B.qD,null,null,B.qR]),t.L)
-B.Ei=A.c(s([B.qE,null,null,B.iI]),t.L)
+B.Eh=A.c(s([B.qE,null,null,B.iI]),t.L)
 B.Ee=A.c(s([B.qF,null,null,B.e1]),t.L)
 B.Dk=A.c(s([B.qG,null,null,B.cd]),t.L)
 B.El=A.c(s([B.qH,null,null,B.e2]),t.L)
@@ -75567,11 +75567,11 @@ B.Ds=A.c(s([B.qL,null,null,B.e3]),t.L)
 B.E8=A.c(s([B.qM,null,null,B.cg]),t.L)
 B.E9=A.c(s([B.qN,null,null,B.e4]),t.L)
 B.Dl=A.c(s([B.e_,B.e_,B.fy,null]),t.L)
-B.Ej=A.c(s([B.fu,null,B.fu,null]),t.L)
+B.Ei=A.c(s([B.fu,null,B.fu,null]),t.L)
 B.Dw=A.c(s([B.bg,null,null,B.cd]),t.L)
 B.Dx=A.c(s([B.b7,null,null,B.ce]),t.L)
 B.Dy=A.c(s([B.b8,null,null,B.cf]),t.L)
-B.Ek=A.c(s([B.bh,null,null,B.cg]),t.L)
+B.Ej=A.c(s([B.bh,null,null,B.cg]),t.L)
 B.Eb=A.c(s([B.iB,null,null,B.iJ]),t.L)
 B.Dm=A.c(s([B.dZ,B.dZ,B.fx,null]),t.L)
 B.DQ=A.c(s([B.an,null,null,B.cc]),t.L)
@@ -75583,7 +75583,7 @@ B.Dn=A.c(s([B.e0,B.e0,B.fz,null]),t.L)
 B.DB=A.c(s([B.dX,null,null,B.e2]),t.L)
 B.DU=A.c(s([B.dY,null,null,B.e4]),t.L)
 B.Do=A.c(s([B.bQ,B.bQ,B.cb,null]),t.L)
-B.G5=new A.cH(["*",B.De,"+",B.E7,"-",B.Du,".",B.DL,"/",B.CH,"0",B.Ei,"1",B.Ee,"2",B.Dk,"3",B.El,"4",B.Ed,"5",B.Di,"6",B.CL,"7",B.Ds,"8",B.E8,"9",B.E9,"Alt",B.Dl,"AltGraph",B.Ej,"ArrowDown",B.Dw,"ArrowLeft",B.Dx,"ArrowRight",B.Dy,"ArrowUp",B.Ek,"Clear",B.Eb,"Control",B.Dm,"Delete",B.DQ,"End",B.Dz,"Enter",B.Dh,"Home",B.DA,"Insert",B.Ec,"Meta",B.Dn,"PageDown",B.DB,"PageUp",B.DU,"Shift",B.Do],A.am("cH<C,T<e?>>"))
+B.G5=new A.cH(["*",B.De,"+",B.E7,"-",B.Du,".",B.DL,"/",B.CH,"0",B.Eh,"1",B.Ee,"2",B.Dk,"3",B.El,"4",B.Ed,"5",B.Di,"6",B.CL,"7",B.Ds,"8",B.E8,"9",B.E9,"Alt",B.Dl,"AltGraph",B.Ei,"ArrowDown",B.Dw,"ArrowLeft",B.Dx,"ArrowRight",B.Dy,"ArrowUp",B.Ej,"Clear",B.Eb,"Control",B.Dm,"Delete",B.DQ,"End",B.Dz,"Enter",B.Dh,"Home",B.DA,"Insert",B.Ec,"Meta",B.Dn,"PageDown",B.DB,"PageUp",B.DU,"Shift",B.Do],A.am("cH<C,T<e?>>"))
 B.GB={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.r0=new A.bp(B.GB,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.li)
 B.Gy={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Escape:49,Esc:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
@@ -76238,11 +76238,11 @@ B.Kv=new A.i0(3,"hide")
 B.SN=new A.i0(4,"remove")
 B.wP=new A.i0(5,"timeout")
 B.Kw=new A.q3(null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Py=new A.hh("Texto copiado al portapapeles",null,null,null,null,null,null,null,null)
+B.Pz=new A.hh("Texto copiado al portapapeles",null,null,null,null,null,null,null,null)
 B.lg=new A.aF(4e6)
-B.Kx=new A.kY(B.Py,null,null,null,null,null,null,null,null,null,null,null,null,B.lg,null,null,null,B.a_,null)
-B.PB=new A.hh("Montos copiados al portapapeles",null,null,null,null,null,null,null,null)
-B.Ky=new A.kY(B.PB,null,null,null,null,null,null,null,null,null,null,null,null,B.lg,null,null,null,B.a_,null)
+B.Kx=new A.kY(B.Pz,null,null,null,null,null,null,null,null,null,null,null,null,B.lg,null,null,null,B.a_,null)
+B.PC=new A.hh("Montos copiados al portapapeles",null,null,null,null,null,null,null,null)
+B.Ky=new A.kY(B.PC,null,null,null,null,null,null,null,null,null,null,null,null,B.lg,null,null,null,B.a_,null)
 B.wQ=new A.xt(0,"permissive")
 B.Kz=new A.xt(1,"normal")
 B.KA=new A.xt(2,"forced")
@@ -76595,9 +76595,9 @@ B.LG=new A.k(!0,B.l,null,".AppleSystemUIFont",null,null,null,null,null,null,null
 B.Px=new A.cR(B.Nl,B.Mp,B.Nm,B.NV,B.M2,B.Ma,B.MJ,B.NI,B.MX,B.Or,B.Lw,B.LS,B.On,B.OG,B.LG)
 B.zG=new A.z(1,0.9647058823529412,0.9568627450980393,0.9568627450980393,B.h)
 B.LN=new A.k(!0,B.zG,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.PA=new A.hh("Reiniciar",null,B.LN,null,null,null,null,null,null)
+B.PB=new A.hh("Reiniciar",null,B.LN,null,null,null,null,null,null)
 B.OF=new A.k(!0,B.k,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.PC=new A.hh("Copiar Todos los Montos",null,B.OF,null,null,null,null,null,null)
+B.PD=new A.hh("Copiar Todos los Montos",null,B.OF,null,null,null,null,null,null)
 B.SP=new A.a5o(0,"system")
 B.GX=new A.i(0.056,0.024)
 B.H9=new A.i(0.108,0.3085)
