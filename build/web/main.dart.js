@@ -72897,8 +72897,8 @@ if(r==null)r=0
 p.c=r
 if(a==="soles"){s=o*43.5
 p.b=s
-p.c=s/125.24}else if(a==="bolivares"){p.a=s/43.5
-p.c=s/125.24}else if(a==="dollarBCV"){s=r*125.24
+p.c=s/126.28}else if(a==="bolivares"){p.a=s/43.5
+p.c=s/126.28}else if(a==="dollarBCV"){s=r*126.28
 p.b=s
 p.a=s/43.5}q.ah(new A.a97(p,q,a))},
 yI(a){A.oO(new A.jZ(a))
@@ -72907,10 +72907,10 @@ a51(){this.d.ka(B.jQ)
 this.e.ka(B.jQ)
 this.f.ka(B.jQ)},
 XY(){var s=this
-A.oO(new A.jZ("Calculadora EADON\nActualizaci\xf3n 01-08-2025\nCantidad en Soles: "+s.d.a.a+" - Tasa: 43.5 Bs.\nCantidad en Bs. a Recibir: "+s.e.a.a+"\nD\xf3lares (BCV): "+s.f.a.a+" - Tasa: 125.24 Bs.\n"))
+A.oO(new A.jZ("Calculadora EADON\nActualizaci\xf3n 04-08-2025\nCantidad en Soles: "+s.d.a.a+" - Tasa: 43.5 Bs.\nCantidad en Bs. a Recibir: "+s.e.a.a+"\nD\xf3lares (BCV): "+s.f.a.a+" - Tasa: 126.28 Bs.\n"))
 s.c.ao(t.Pu).f.F6(B.Lj)},
 P(a){var s=this,r=null
-return A.SG(A.c([A.ahG(s.d,A.Xn(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.dc,"Tasa 43.5 Bs - Soles a Enviar",!0,!0,r,r,r,r,r,r,r,r,A.v4(r,r,B.iL,r,r,new A.a98(s),r,r,r),r,r,r,r),B.jS,new A.a99(s)),A.ahG(s.e,A.Xn(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.dc,"Cantidad en Bs. a Recibir",!0,!0,r,r,r,r,r,r,r,r,A.v4(r,r,B.iL,r,r,new A.a9a(s),r,r,r),r,r,r,r),B.jS,new A.a9b(s)),A.ahG(s.f,A.Xn(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.dc,"D\xf3lar (BCV) - 125.24 Bs",!0,!0,r,r,r,r,r,r,r,r,A.v4(r,r,B.iL,r,r,new A.a9c(s),r,r,r),r,r,r,r),B.jS,new A.a9d(s)),B.em,A.akh(B.Qk,s.ga50(),A.aki(r,r,B.Ad,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.L8,A.akh(B.Qm,s.gXX(),A.aki(r,r,B.A4,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cJ,B.bl,B.ck)}}
+return A.SG(A.c([A.ahG(s.d,A.Xn(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.dc,"Tasa 43.5 Bs - Soles a Enviar",!0,!0,r,r,r,r,r,r,r,r,A.v4(r,r,B.iL,r,r,new A.a98(s),r,r,r),r,r,r,r),B.jS,new A.a99(s)),A.ahG(s.e,A.Xn(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.dc,"Cantidad en Bs. a Recibir",!0,!0,r,r,r,r,r,r,r,r,A.v4(r,r,B.iL,r,r,new A.a9a(s),r,r,r),r,r,r,r),B.jS,new A.a9b(s)),A.ahG(s.f,A.Xn(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.dc,"D\xf3lar (BCV) - 126.28 Bs",!0,!0,r,r,r,r,r,r,r,r,A.v4(r,r,B.iL,r,r,new A.a9c(s),r,r,r),r,r,r,r),B.jS,new A.a9d(s)),B.em,A.akh(B.Qk,s.ga50(),A.aki(r,r,B.Ad,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.L8,A.akh(B.Qm,s.gXX(),A.aki(r,r,B.A4,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cJ,B.bl,B.ck)}}
 A.a97.prototype={
 $0(){var s=this,r=s.c
 if(r!=="soles")s.b.d.sf3(B.c.a5(s.a.a,2))
@@ -75682,7 +75682,7 @@ B.J=new A.oK(0,"none")
 B.AQ=new A.A(1,0.03137254901960784,0.03137254901960784,0.03137254901960784,B.h)
 B.ca=new A.fn(6)
 B.OT=new A.k(!0,B.AQ,null,null,null,null,null,B.ca,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Qn=new A.ho("Actualizaci\xf3n 01-08-2025",null,B.OT,null,null,null,null,null,null)
+B.Qn=new A.ho("Actualizaci\xf3n 04-08-2025",null,B.OT,null,null,null,null,null,null)
 B.em=new A.l5(null,20,null,null)
 B.zO=new A.Dd(null)
 B.Dn=A.c(s([B.Qn,B.em,B.zO]),t.E)
