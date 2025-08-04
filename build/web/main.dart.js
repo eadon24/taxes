@@ -76172,32 +76172,33 @@ L(a){var s=null
 return A.F2(B.C3,B.D,s,new A.dJ(A.aF(B.c.aD(229.5),B.k.D()>>>16&255,B.k.D()>>>8&255,B.k.D()&255),s,s,A.uh(10),A.b([new A.b4(2,B.C,A.aF(B.c.aD(127.5),B.jn.D()>>>16&255,B.jn.D()>>>8&255,B.jn.D()&255),B.ct,5)],t.V),s,B.aT),s,s,B.lV,s)}}
 A.vw.prototype={
 aj(){var s=$.ao(),r=t.N,q=t.z
-return new A.Ao(new A.r6(B.hc,s),new A.r6(B.hc,s),new A.r6(B.hc,s),A.b([A.ah(["pais","Per\xfa","tasa",43.5],r,q),A.ah(["pais","Chile","tasa",0.16],r,q),A.ah(["pais","Colombia","tasa",28.5],r,q),A.ah(["pais","EE.UU.","tasa",150],r,q)],t.H7))}}
+return new A.Ao(new A.r6(B.hc,s),new A.r6(B.hc,s),new A.r6(B.hc,s),A.b([A.ah(["pais","Per\xfa","tasa",43.5,"modo","multiplicar","bandera","\ud83c\uddf5\ud83c\uddea"],r,q),A.ah(["pais","Chile","tasa",0.16,"modo","multiplicar","bandera","\ud83c\udde8\ud83c\uddf1"],r,q),A.ah(["pais","Colombia","tasa",28.5,"modo","dividir","bandera","\ud83c\udde8\ud83c\uddf4"],r,q),A.ah(["pais","EE.UU.","tasa",150,"modo","multiplicar","bandera","\ud83c\uddfa\ud83c\uddf8"],r,q)],t.H7))}}
 A.Ao.prototype={
-va(a){var s,r,q,p=this,o={},n=A.HV(p.d.a.a)
-if(n==null)n=0
-o.a=n
-s=A.HV(p.e.a.a)
+va(a){var s,r,q,p,o,n=this,m={},l=A.HV(n.d.a.a)
+if(l==null)l=0
+m.a=l
+s=A.HV(n.e.a.a)
 if(s==null)s=0
-o.b=s
-r=A.HV(p.f.a.a)
+m.b=s
+r=A.HV(n.f.a.a)
 if(r==null)r=0
-o.c=r
-q=p.r[p.x].h(0,"tasa")
-if(a==="soles"){s=n*q
-o.b=s
-o.c=s/126.28}else if(a==="bolivares"){o.a=s/q
-o.c=s/126.28}else if(a==="dollarBCV"){s=r*126.28
-o.b=s
-o.a=s/q}p.am(new A.abI(o,p,a))},
+m.c=r
+q=n.r[n.x]
+p=q.h(0,"tasa")
+o=q.h(0,"modo")==="dividir"
+if(a==="soles"){s=o?l/p:l*p
+m.b=s
+m.c=s/126.28}else if(a==="bolivares"){m.a=o?s*p:s/p
+m.c=s/126.28}else if(a==="dollarBCV"){s=m.b=r*126.28
+m.a=o?s*p:s/p}n.am(new A.abI(m,n,a))},
 a9g(){return this.va("")},
 zE(a){A.pn(new A.kq(a))
 this.c.ak(t.Pu).f.Gf(B.MI)},
 a73(){this.d.kz(B.k7)
 this.e.kz(B.k7)
 this.f.kz(B.k7)},
-ZI(){var s=this,r=s.r,q=r[s.x].h(0,"tasa")
-A.pn(new A.kq("Calculadora EADON\nActualizaci\xf3n 04-08-2025\nPa\xeds seleccionado: "+r[s.x].h(0,"pais")+"\nCantidad enviada: "+s.d.a.a+"\nTasa: "+A.m(q)+" Bs.\nCantidad en Bs. a recibir: "+s.e.a.a+"\nD\xf3lares (BCV): "+s.f.a.a+" - Tasa BCV: 126.28 Bs.\n"))
+ZI(){var s=this,r=s.r,q=r[s.x].h(0,"tasa"),p=r[s.x].h(0,"pais")
+A.pn(new A.kq("Calculadora EADON\nActualizaci\xf3n 04-08-2025\nPa\xeds seleccionado: "+r[s.x].h(0,"bandera")+" "+p+"\nCantidad enviada: "+s.d.a.a+"\nTasa: "+A.m(q)+" Bs.\nCantidad en Bs. a recibir: "+s.e.a.a+"\nD\xf3lares (BCV): "+s.f.a.a+" - Tasa BCV: 126.28 Bs."))
 s.c.ak(t.Pu).f.Gf(B.MJ)},
 L(a){var s=this,r=null,q=s.r,p=q[s.x].h(0,"tasa"),o=q[s.x].h(0,"pais")
 q=s.x
@@ -76210,7 +76211,7 @@ if(r!=="dollarBCV")s.b.f.sfi(B.c.a3(s.a.c,2))},
 $S:0}
 A.abK.prototype={
 $1(a){var s=null,r=this.a.r[a]
-return new A.mO(a,A.lB(A.m(r.h(0,"pais"))+" - "+A.m(r.h(0,"tasa"))+" Bs",s,s,s,s,s,s),B.hF,s,t.kZ)},
+return new A.mO(a,A.lB(A.m(r.h(0,"bandera"))+" "+A.m(r.h(0,"pais"))+" - "+A.m(r.h(0,"tasa"))+" Bs",s,s,s,s,s,s),B.hF,s,t.kZ)},
 $S:476}
 A.abL.prototype={
 $1(a){var s=this.a

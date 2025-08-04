@@ -107,10 +107,10 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   final TextEditingController _dollarBCVController = TextEditingController();
 
   final List<Map<String, dynamic>> tasasPorPais = [
-    {'pais': 'Perú', 'tasa': 43.50},
-    {'pais': 'Chile', 'tasa': 0.1600},
-    {'pais': 'Colombia', 'tasa': 28.50},
-    {'pais': 'EE.UU.', 'tasa': 150.0},
+    {'pais': 'Perú', 'tasa': 43.50, 'modo': 'multiplicar', 'bandera': '🇵🇪'},
+    {'pais': 'Chile', 'tasa': 0.1600, 'modo': 'multiplicar', 'bandera': '🇨🇱'},
+    {'pais': 'Colombia', 'tasa': 28.50, 'modo': 'dividir', 'bandera': '🇨🇴'},
+    {'pais': 'EE.UU.', 'tasa': 150.0, 'modo': 'multiplicar', 'bandera': '🇺🇸'},
   ];
 
   double dollarBCVRate = 126.28;
@@ -122,17 +122,19 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
     double bolivares = double.tryParse(_bolivaresController.text) ?? 0.0;
     double dollarsBCV = double.tryParse(_dollarBCVController.text) ?? 0.0;
 
-    double exchangeRate = tasasPorPais[selectedIndex]['tasa'];
+    final tasaInfo = tasasPorPais[selectedIndex];
+    double exchangeRate = tasaInfo['tasa'];
+    bool esDivision = tasaInfo['modo'] == 'dividir';
 
     if (source == 'soles') {
-      bolivares = soles * exchangeRate;
+      bolivares = esDivision ? soles / exchangeRate : soles * exchangeRate;
       dollarsBCV = bolivares / dollarBCVRate;
     } else if (source == 'bolivares') {
-      soles = bolivares / exchangeRate;
+      soles = esDivision ? bolivares * exchangeRate : bolivares / exchangeRate;
       dollarsBCV = bolivares / dollarBCVRate;
     } else if (source == 'dollarBCV') {
       bolivares = dollarsBCV * dollarBCVRate;
-      soles = bolivares / exchangeRate;
+      soles = esDivision ? bolivares * exchangeRate : bolivares / exchangeRate;
     }
 
     setState(() {
@@ -160,16 +162,15 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   void _copyAllValues() {
     double tasa = tasasPorPais[selectedIndex]['tasa'];
     String pais = tasasPorPais[selectedIndex]['pais'];
+    String bandera = tasasPorPais[selectedIndex]['bandera'];
 
-    String allValues = """
-Calculadora EADON
-$updateText
-País seleccionado: $pais
-Cantidad enviada: ${_solesController.text}
-Tasa: $tasa Bs.
-Cantidad en Bs. a recibir: ${_bolivaresController.text}
-Dólares (BCV): ${_dollarBCVController.text} - Tasa BCV: $dollarBCVRate Bs.
-""";
+    String allValues = "Calculadora EADON\n"
+        "$updateText\n"
+        "País seleccionado: $bandera $pais\n"
+        "Cantidad enviada: ${_solesController.text}\n"
+        "Tasa: $tasa Bs.\n"
+        "Cantidad en Bs. a recibir: ${_bolivaresController.text}\n"
+        "Dólares (BCV): ${_dollarBCVController.text} - Tasa BCV: $dollarBCVRate Bs.";
 
     Clipboard.setData(ClipboardData(text: allValues));
     ScaffoldMessenger.of(context).showSnackBar(
@@ -192,7 +193,8 @@ Dólares (BCV): ${_dollarBCVController.text} - Tasa BCV: $dollarBCVRate Bs.
             final item = tasasPorPais[index];
             return DropdownMenuItem<int>(
               value: index,
-              child: Text('${item['pais']} - ${item['tasa']} Bs'),
+              child: Text(
+                  "${item['bandera']} ${item['pais']} - ${item['tasa']} Bs"),
             );
           }),
           onChanged: (value) {
