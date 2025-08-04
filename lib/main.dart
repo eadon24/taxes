@@ -106,14 +106,23 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   final TextEditingController _bolivaresController = TextEditingController();
   final TextEditingController _dollarBCVController = TextEditingController();
 
-  double exchangeRate = 43.50; // Tasa de cambio soles a bolívares
-  double dollarBCVRate = 126.28; // Tasa de cambio bolívares a dólares BCV
+  final List<Map<String, dynamic>> tasasPorPais = [
+    {'pais': 'Perú', 'tasa': 43.50},
+    {'pais': 'Chile', 'tasa': 0.1600},
+    {'pais': 'Colombia', 'tasa': 28.50},
+    {'pais': 'EE.UU.', 'tasa': 150.0},
+  ];
+
+  double dollarBCVRate = 126.28;
+  int selectedIndex = 0;
   String updateText = 'Actualización 04-08-2025';
 
   void _updateFields({String source = ''}) {
     double soles = double.tryParse(_solesController.text) ?? 0.0;
     double bolivares = double.tryParse(_bolivaresController.text) ?? 0.0;
     double dollarsBCV = double.tryParse(_dollarBCVController.text) ?? 0.0;
+
+    double exchangeRate = tasasPorPais[selectedIndex]['tasa'];
 
     if (source == 'soles') {
       bolivares = soles * exchangeRate;
@@ -149,14 +158,19 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   }
 
   void _copyAllValues() {
-    String allValues =
-        """
+    double tasa = tasasPorPais[selectedIndex]['tasa'];
+    String pais = tasasPorPais[selectedIndex]['pais'];
+
+    String allValues = """
 Calculadora EADON
 $updateText
-Cantidad en Soles: ${_solesController.text} - Tasa: $exchangeRate Bs.
-Cantidad en Bs. a Recibir: ${_bolivaresController.text}
-Dólares (BCV): ${_dollarBCVController.text} - Tasa: $dollarBCVRate Bs.
+País seleccionado: $pais
+Cantidad enviada: ${_solesController.text}
+Tasa: $tasa Bs.
+Cantidad en Bs. a recibir: ${_bolivaresController.text}
+Dólares (BCV): ${_dollarBCVController.text} - Tasa BCV: $dollarBCVRate Bs.
 """;
+
     Clipboard.setData(ClipboardData(text: allValues));
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text('Montos copiados al portapapeles')),
@@ -165,14 +179,36 @@ Dólares (BCV): ${_dollarBCVController.text} - Tasa: $dollarBCVRate Bs.
 
   @override
   Widget build(BuildContext context) {
+    double exchangeRate = tasasPorPais[selectedIndex]['tasa'];
+    String pais = tasasPorPais[selectedIndex]['pais'];
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
+        DropdownButton<int>(
+          value: selectedIndex,
+          isExpanded: true,
+          items: List.generate(tasasPorPais.length, (index) {
+            final item = tasasPorPais[index];
+            return DropdownMenuItem<int>(
+              value: index,
+              child: Text('${item['pais']} - ${item['tasa']} Bs'),
+            );
+          }),
+          onChanged: (value) {
+            if (value != null) {
+              setState(() {
+                selectedIndex = value;
+                _updateFields();
+              });
+            }
+          },
+        ),
         TextField(
           controller: _solesController,
           keyboardType: TextInputType.number,
           decoration: InputDecoration(
-            labelText: 'Tasa $exchangeRate Bs - Soles a Enviar',
+            labelText: 'Tasa $exchangeRate Bs - Monto a Enviar ($pais)',
             labelStyle: const TextStyle(fontWeight: FontWeight.bold),
             suffixIcon: IconButton(
               icon: const Icon(Icons.content_copy),
