@@ -76198,7 +76198,7 @@ a73(){this.d.kz(B.k7)
 this.e.kz(B.k7)
 this.f.kz(B.k7)},
 ZI(){var s=this,r=s.r,q=r[s.x].h(0,"tasa"),p=r[s.x].h(0,"pais")
-A.pn(new A.kq("Calculadora EADON\nActualizaci\xf3n 21-09-2025\nPa\xeds seleccionado: "+r[s.x].h(0,"bandera")+" "+p+"\nCantidad enviada: "+s.d.a.a+"\nTasa: "+A.m(q)+" Bs.\nCantidad en Bs. a recibir: "+s.e.a.a+"\nD\xf3lares (BCV): "+s.f.a.a+" - Tasa BCV: 168.41 Bs."))
+A.pn(new A.kq("Calculadora EADON\nActualizaci\xf3n 23-09-2025\nPa\xeds seleccionado: "+r[s.x].h(0,"bandera")+" "+p+"\nCantidad enviada: "+s.d.a.a+"\nTasa: "+A.m(q)+" Bs.\nCantidad en Bs. a recibir: "+s.e.a.a+"\nD\xf3lares (BCV): "+s.f.a.a+" - Tasa BCV: 168.41 Bs."))
 s.c.ak(t.Pu).f.Gf(B.MJ)},
 L(a){var s=this,r=null,q=s.r,p=q[s.x].h(0,"tasa"),o=q[s.x].h(0,"pais")
 q=s.x
@@ -79105,7 +79105,7 @@ B.D=new A.pj(0,"none")
 B.BY=new A.D(1,0.03137254901960784,0.03137254901960784,0.03137254901960784,B.h)
 B.ci=new A.fB(6)
 B.Qi=new A.k(!0,B.BY,null,null,null,null,null,B.ci,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.RI=new A.hB("Actualizaci\xf3n 21-09-2025",null,B.Qi,null,null,null,null,null,null)
+B.RI=new A.hB("Actualizaci\xf3n 23-09-2025",null,B.Qi,null,null,null,null,null,null)
 B.et=new A.lw(null,20,null,null)
 B.AW=new A.Ex(null)
 B.Gn=A.b(s([B.RI,B.et,B.AW]),t.E)
