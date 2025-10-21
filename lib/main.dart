@@ -113,7 +113,7 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
     {'pais': 'EE.UU.', 'tasa': 272.0, 'modo': 'multiplicar', 'bandera': '🇺🇸'},
   ];
 
-  double dollarBCVRate = 205.6754;
+  double dollarBCVRate = 207.8938;
   int selectedIndex = 0;
   String updateText = 'Actualización 21-10-2025';
 
