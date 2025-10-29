@@ -76172,7 +76172,7 @@ L(a){var s=null
 return A.F2(B.C2,B.D,s,new A.dJ(A.aF(B.c.aD(229.5),B.k.D()>>>16&255,B.k.D()>>>8&255,B.k.D()&255),s,s,A.uh(10),A.b([new A.b4(2,B.C,A.aF(B.c.aD(127.5),B.jn.D()>>>16&255,B.jn.D()>>>8&255,B.jn.D()&255),B.ct,5)],t.V),s,B.aT),s,s,B.lV,s)}}
 A.vw.prototype={
 aj(){var s=$.ao(),r=t.N,q=t.z
-return new A.Ao(new A.r6(B.hc,s),new A.r6(B.hc,s),new A.r6(B.hc,s),A.b([A.ah(["pais","Per\xfa","tasa",86.2,"modo","multiplicar","bandera","\ud83c\uddf5\ud83c\uddea"],r,q),A.ah(["pais","Chile","tasa",0.305,"modo","multiplicar","bandera","\ud83c\udde8\ud83c\uddf1"],r,q),A.ah(["pais","Colombia","tasa",13.5,"modo","dividir","bandera","\ud83c\udde8\ud83c\uddf4"],r,q),A.ah(["pais","EE.UU.","tasa",288,"modo","multiplicar","bandera","\ud83c\uddfa\ud83c\uddf8"],r,q)],t.H7))}}
+return new A.Ao(new A.r6(B.hc,s),new A.r6(B.hc,s),new A.r6(B.hc,s),A.b([A.ah(["pais","Per\xfa","tasa",85.5,"modo","multiplicar","bandera","\ud83c\uddf5\ud83c\uddea"],r,q),A.ah(["pais","Chile","tasa",0.3,"modo","multiplicar","bandera","\ud83c\udde8\ud83c\uddf1"],r,q),A.ah(["pais","Colombia","tasa",13.5,"modo","dividir","bandera","\ud83c\udde8\ud83c\uddf4"],r,q),A.ah(["pais","EE.UU.","tasa",280,"modo","multiplicar","bandera","\ud83c\uddfa\ud83c\uddf8"],r,q)],t.H7))}}
 A.Ao.prototype={
 va(a){var s,r,q,p,o,n=this,m={},l=A.HV(n.d.a.a)
 if(l==null)l=0
@@ -76188,8 +76188,8 @@ p=q.h(0,"tasa")
 o=q.h(0,"modo")==="dividir"
 if(a==="soles"){s=o?l/p:l*p
 m.b=s
-m.c=s/218.17}else if(a==="bolivares"){m.a=o?s*p:s/p
-m.c=s/218.17}else if(a==="dollarBCV"){s=m.b=r*218.17
+m.c=s/219.8737}else if(a==="bolivares"){m.a=o?s*p:s/p
+m.c=s/219.8737}else if(a==="dollarBCV"){s=m.b=r*219.8737
 m.a=o?s*p:s/p}n.am(new A.abI(m,n,a))},
 a9g(){return this.va("")},
 zE(a){A.pn(new A.kq(a))
@@ -76198,11 +76198,11 @@ a73(){this.d.kz(B.k7)
 this.e.kz(B.k7)
 this.f.kz(B.k7)},
 ZI(){var s=this,r=s.r,q=r[s.x].h(0,"tasa"),p=r[s.x].h(0,"pais")
-A.pn(new A.kq("Calculadora EADON\nActualizaci\xf3n 28-10-2025\nPa\xeds seleccionado: "+r[s.x].h(0,"bandera")+" "+p+"\nCantidad enviada: "+s.d.a.a+"\nTasa: "+A.m(q)+" Bs.\nCantidad en Bs. a recibir: "+s.e.a.a+"\nD\xf3lares (BCV): "+s.f.a.a+" - Tasa BCV: 218.17 Bs."))
+A.pn(new A.kq("Calculadora EADON\nActualizaci\xf3n 29-10-2025\nPa\xeds seleccionado: "+r[s.x].h(0,"bandera")+" "+p+"\nCantidad enviada: "+s.d.a.a+"\nTasa: "+A.m(q)+" Bs.\nCantidad en Bs. a recibir: "+s.e.a.a+"\nD\xf3lares (BCV): "+s.f.a.a+" - Tasa BCV: 219.8737 Bs."))
 s.c.ak(t.Pu).f.Gf(B.MJ)},
 L(a){var s=this,r=null,q=s.r,p=q[s.x].h(0,"tasa"),o=q[s.x].h(0,"pais")
 q=s.x
-return A.Uz(A.b([new A.pC(A.ajM(4,new A.abK(s),!0,t.kZ),q,new A.abL(s),!0,r,t.CB),A.akj(s.d,A.Zj(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.di,"Tasa "+A.m(p)+" Bs - Monto a Enviar ("+o+")",!0,!0,r,r,r,r,r,r,r,r,A.vW(r,r,B.iZ,r,r,new A.abM(s),r,r,r),r,r,r,r),B.k9,new A.abN(s)),A.akj(s.e,A.Zj(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.di,"Cantidad en Bs. a Recibir",!0,!0,r,r,r,r,r,r,r,r,A.vW(r,r,B.iZ,r,r,new A.abO(s),r,r,r),r,r,r,r),B.k9,new A.abP(s)),A.akj(s.f,A.Zj(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.di,"D\xf3lar (BCV) - 218.17 Bs",!0,!0,r,r,r,r,r,r,r,r,A.vW(r,r,B.iZ,r,r,new A.abQ(s),r,r,r),r,r,r,r),B.k9,new A.abR(s)),B.et,A.an_(B.RK,s.ga72(),A.an0(r,r,B.Bl,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.My,A.an_(B.RM,s.gZH(),A.an0(r,r,B.Bd,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cQ,B.br,B.cs)}}
+return A.Uz(A.b([new A.pC(A.ajM(4,new A.abK(s),!0,t.kZ),q,new A.abL(s),!0,r,t.CB),A.akj(s.d,A.Zj(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.di,"Tasa "+A.m(p)+" Bs - Monto a Enviar ("+o+")",!0,!0,r,r,r,r,r,r,r,r,A.vW(r,r,B.iZ,r,r,new A.abM(s),r,r,r),r,r,r,r),B.k9,new A.abN(s)),A.akj(s.e,A.Zj(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.di,"Cantidad en Bs. a Recibir",!0,!0,r,r,r,r,r,r,r,r,A.vW(r,r,B.iZ,r,r,new A.abO(s),r,r,r),r,r,r,r),B.k9,new A.abP(s)),A.akj(s.f,A.Zj(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.di,"D\xf3lar (BCV) - 219.8737 Bs",!0,!0,r,r,r,r,r,r,r,r,A.vW(r,r,B.iZ,r,r,new A.abQ(s),r,r,r),r,r,r,r),B.k9,new A.abR(s)),B.et,A.an_(B.RK,s.ga72(),A.an0(r,r,B.Bl,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.My,A.an_(B.RM,s.gZH(),A.an0(r,r,B.Bd,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cQ,B.br,B.cs)}}
 A.abI.prototype={
 $0(){var s=this,r=s.c
 if(r!=="soles")s.b.d.sfi(B.c.a3(s.a.a,2))
@@ -79105,7 +79105,7 @@ B.D=new A.pj(0,"none")
 B.BY=new A.D(1,0.03137254901960784,0.03137254901960784,0.03137254901960784,B.h)
 B.ci=new A.fB(6)
 B.Qi=new A.k(!0,B.BY,null,null,null,null,null,B.ci,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.RN=new A.hB("Actualizaci\xf3n 28-10-2025",null,B.Qi,null,null,null,null,null,null)
+B.RN=new A.hB("Actualizaci\xf3n 29-10-2025",null,B.Qi,null,null,null,null,null,null)
 B.et=new A.lw(null,20,null,null)
 B.AW=new A.Ex(null)
 B.Fp=A.b(s([B.RN,B.et,B.AW]),t.E)
