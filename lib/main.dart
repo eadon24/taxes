@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Actualización 24-12-2025',
+                  'Actualización 26-12-2025',
                   style: TextStyle(
                     color: Color.fromARGB(255, 8, 8, 8),
                     fontWeight: FontWeight.bold,
@@ -107,15 +107,15 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   final TextEditingController _dollarBCVController = TextEditingController();
 
   final List<Map<String, dynamic>> tasasPorPais = [
-    {'pais': 'Perú', 'tasa': 131.00, 'modo': 'multiplicar', 'bandera': '🇵🇪'},
-    {'pais': 'Chile', 'tasa': 0.445, 'modo': 'multiplicar', 'bandera': '🇨🇱'},
-    {'pais': 'Colombia', 'tasa': 9.00, 'modo': 'dividir', 'bandera': '🇨🇴'},
-    {'pais': 'EE.UU.', 'tasa': 405.0, 'modo': 'multiplicar', 'bandera': '🇺🇸'},
+    {'pais': 'Perú', 'tasa': 145.00, 'modo': 'multiplicar', 'bandera': '🇵🇪'},
+    {'pais': 'Chile', 'tasa': 0.485, 'modo': 'multiplicar', 'bandera': '🇨🇱'},
+    {'pais': 'Colombia', 'tasa': 8.30, 'modo': 'dividir', 'bandera': '🇨🇴'},
+    {'pais': 'EE.UU.', 'tasa': 455.0, 'modo': 'multiplicar', 'bandera': '🇺🇸'},
   ];
 
   double dollarBCVRate = 291.3524;
   int selectedIndex = 0;
-  String updateText = 'Actualización 24-12-2025';
+  String updateText = 'Actualización 26-12-2025';
 
   void _updateFields({String source = ''}) {
     double soles = double.tryParse(_solesController.text) ?? 0.0;
