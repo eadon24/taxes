@@ -76172,7 +76172,7 @@ L(a){var s=null
 return A.F2(B.C2,B.D,s,new A.dJ(A.aF(B.c.aD(229.5),B.k.D()>>>16&255,B.k.D()>>>8&255,B.k.D()&255),s,s,A.uh(10),A.b([new A.b4(2,B.C,A.aF(B.c.aD(127.5),B.jn.D()>>>16&255,B.jn.D()>>>8&255,B.jn.D()&255),B.ct,5)],t.V),s,B.aT),s,s,B.lV,s)}}
 A.vw.prototype={
 aj(){var s=$.ao(),r=t.N,q=t.z
-return new A.Ao(new A.r6(B.hc,s),new A.r6(B.hc,s),new A.r6(B.hc,s),A.b([A.ah(["pais","Per\xfa","tasa",125,"modo","multiplicar","bandera","\ud83c\uddf5\ud83c\uddea"],r,q),A.ah(["pais","Chile","tasa",0.465,"modo","multiplicar","bandera","\ud83c\udde8\ud83c\uddf1"],r,q),A.ah(["pais","Colombia","tasa",9,"modo","dividir","bandera","\ud83c\udde8\ud83c\uddf4"],r,q),A.ah(["pais","EE.UU.","tasa",405,"modo","multiplicar","bandera","\ud83c\uddfa\ud83c\uddf8"],r,q)],t.H7))}}
+return new A.Ao(new A.r6(B.hc,s),new A.r6(B.hc,s),new A.r6(B.hc,s),A.b([A.ah(["pais","Per\xfa","tasa",110,"modo","multiplicar","bandera","\ud83c\uddf5\ud83c\uddea"],r,q),A.ah(["pais","Chile","tasa",0.415,"modo","multiplicar","bandera","\ud83c\udde8\ud83c\uddf1"],r,q),A.ah(["pais","Colombia","tasa",10,"modo","dividir","bandera","\ud83c\udde8\ud83c\uddf4"],r,q),A.ah(["pais","EE.UU.","tasa",380,"modo","multiplicar","bandera","\ud83c\uddfa\ud83c\uddf8"],r,q)],t.H7))}}
 A.Ao.prototype={
 va(a){var s,r,q,p,o,n=this,m={},l=A.HV(n.d.a.a)
 if(l==null)l=0
@@ -76198,7 +76198,7 @@ a73(){this.d.kz(B.k7)
 this.e.kz(B.k7)
 this.f.kz(B.k7)},
 ZI(){var s=this,r=s.r,q=r[s.x].h(0,"tasa"),p=r[s.x].h(0,"pais")
-A.pn(new A.kq("Calculadora EADON\nActualizaci\xf3n 18-01-2025\nPa\xeds seleccionado: "+r[s.x].h(0,"bandera")+" "+p+"\nCantidad enviada: "+s.d.a.a+"\nTasa: "+A.m(q)+" Bs.\nCantidad en Bs. a recibir: "+s.e.a.a+"\nD\xf3lares (BCV): "+s.f.a.a+" - Tasa BCV: 344.5071 Bs."))
+A.pn(new A.kq("Calculadora EADON\nActualizaci\xf3n 19-01-2025\nPa\xeds seleccionado: "+r[s.x].h(0,"bandera")+" "+p+"\nCantidad enviada: "+s.d.a.a+"\nTasa: "+A.m(q)+" Bs.\nCantidad en Bs. a recibir: "+s.e.a.a+"\nD\xf3lares (BCV): "+s.f.a.a+" - Tasa BCV: 344.5071 Bs."))
 s.c.ak(t.Pu).f.Gf(B.MJ)},
 L(a){var s=this,r=null,q=s.r,p=q[s.x].h(0,"tasa"),o=q[s.x].h(0,"pais")
 q=s.x
@@ -79105,7 +79105,7 @@ B.D=new A.pj(0,"none")
 B.BY=new A.D(1,0.03137254901960784,0.03137254901960784,0.03137254901960784,B.h)
 B.ci=new A.fB(6)
 B.Qi=new A.k(!0,B.BY,null,null,null,null,null,B.ci,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.RJ=new A.hB("Actualizaci\xf3n 18-01-2025",null,B.Qi,null,null,null,null,null,null)
+B.RJ=new A.hB("Actualizaci\xf3n 19-01-2025",null,B.Qi,null,null,null,null,null,null)
 B.et=new A.lw(null,20,null,null)
 B.AW=new A.Ex(null)
 B.FA=A.b(s([B.RJ,B.et,B.AW]),t.E)
