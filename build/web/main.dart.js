@@ -76172,7 +76172,7 @@ L(a){var s=null
 return A.F2(B.C2,B.D,s,new A.dJ(A.aF(B.c.aD(229.5),B.k.D()>>>16&255,B.k.D()>>>8&255,B.k.D()&255),s,s,A.uh(10),A.b([new A.b4(2,B.C,A.aF(B.c.aD(127.5),B.jn.D()>>>16&255,B.jn.D()>>>8&255,B.jn.D()&255),B.ct,5)],t.V),s,B.aT),s,s,B.lV,s)}}
 A.vw.prototype={
 aj(){var s=$.ao(),r=t.N,q=t.z
-return new A.Ao(new A.r6(B.hc,s),new A.r6(B.hc,s),new A.r6(B.hc,s),A.b([A.ah(["pais","Per\xfa","tasa",151,"modo","multiplicar","bandera","\ud83c\uddf5\ud83c\uddea"],r,q),A.ah(["pais","Chile","tasa",0.53,"modo","multiplicar","bandera","\ud83c\udde8\ud83c\uddf1"],r,q),A.ah(["pais","Colombia","tasa",7.5,"modo","dividir","bandera","\ud83c\udde8\ud83c\uddf4"],r,q),A.ah(["pais","EE.UU.","tasa",450,"modo","multiplicar","bandera","\ud83c\uddfa\ud83c\uddf8"],r,q)],t.H7))}}
+return new A.Ao(new A.r6(B.hc,s),new A.r6(B.hc,s),new A.r6(B.hc,s),A.b([A.ah(["pais","Per\xfa","tasa",151,"modo","multiplicar","bandera","\ud83c\uddf5\ud83c\uddea"],r,q),A.ah(["pais","Chile","tasa",0.535,"modo","multiplicar","bandera","\ud83c\udde8\ud83c\uddf1"],r,q),A.ah(["pais","Colombia","tasa",7.5,"modo","dividir","bandera","\ud83c\udde8\ud83c\uddf4"],r,q),A.ah(["pais","EE.UU.","tasa",470,"modo","multiplicar","bandera","\ud83c\uddfa\ud83c\uddf8"],r,q)],t.H7))}}
 A.Ao.prototype={
 va(a){var s,r,q,p,o,n=this,m={},l=A.HV(n.d.a.a)
 if(l==null)l=0

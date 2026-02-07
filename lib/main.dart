@@ -108,9 +108,9 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
 
   final List<Map<String, dynamic>> tasasPorPais = [
     {'pais': 'Perú', 'tasa': 151.00, 'modo': 'multiplicar', 'bandera': '🇵🇪'},
-    {'pais': 'Chile', 'tasa': 0.53, 'modo': 'multiplicar', 'bandera': '🇨🇱'},
+    {'pais': 'Chile', 'tasa': 0.535, 'modo': 'multiplicar', 'bandera': '🇨🇱'},
     {'pais': 'Colombia', 'tasa': 7.50, 'modo': 'dividir', 'bandera': '🇨🇴'},
-    {'pais': 'EE.UU.', 'tasa': 450.0, 'modo': 'multiplicar', 'bandera': '🇺🇸'},
+    {'pais': 'EE.UU.', 'tasa': 470.0, 'modo': 'multiplicar', 'bandera': '🇺🇸'},
   ];
 
   double dollarBCVRate = 382.6318;
