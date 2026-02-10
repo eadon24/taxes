@@ -76163,13 +76163,13 @@ $S:475}
 A.Hh.prototype={
 L(a){var s=null,r=A.rd(s,s,B.jm,s),q=t.E,p=A.mz(A.Uz(A.b([B.et,new A.vC(1,B.Dx,new A.vZ(A.ayG(s,s,new A.vu("assets/logo.png",2,s,s)),s),s),B.et],q),B.aZ,B.jk,B.cs),s,s)
 q=A.b([A.vW(s,s,B.DQ,s,s,new A.a2n(),s,s,s)],q)
-return new A.wD(new A.xX(new A.HR(new A.u8(q,p,B.BC,new A.Or(s,s,1/0,56),s),B.Mu,s),A.F2(B.B0,B.D,A.aF(242,B.k.D()>>>16&255,B.k.D()>>>8&255,B.k.D()&255),s,s,s,B.Db,s),s),"Calculadora",r,s)}}
+return new A.wD(new A.xX(new A.HR(new A.u8(q,p,B.BC,new A.Or(s,s,1/0,56),s),B.Mu,s),A.F2(B.B1,B.D,A.aF(242,B.k.D()>>>16&255,B.k.D()>>>8&255,B.k.D()&255),s,s,s,B.Db,s),s),"Calculadora",r,s)}}
 A.a2n.prototype={
 $0(){},
 $S:0}
 A.Ex.prototype={
 L(a){var s=null
-return A.F2(B.C2,B.D,s,new A.dJ(A.aF(B.c.aD(229.5),B.k.D()>>>16&255,B.k.D()>>>8&255,B.k.D()&255),s,s,A.uh(10),A.b([new A.b4(2,B.C,A.aF(B.c.aD(127.5),B.jn.D()>>>16&255,B.jn.D()>>>8&255,B.jn.D()&255),B.ct,5)],t.V),s,B.aT),s,s,B.lV,s)}}
+return A.F2(B.C3,B.D,s,new A.dJ(A.aF(B.c.aD(229.5),B.k.D()>>>16&255,B.k.D()>>>8&255,B.k.D()&255),s,s,A.uh(10),A.b([new A.b4(2,B.C,A.aF(B.c.aD(127.5),B.jn.D()>>>16&255,B.jn.D()>>>8&255,B.jn.D()&255),B.ct,5)],t.V),s,B.aT),s,s,B.lV,s)}}
 A.vw.prototype={
 aj(){var s=$.ao(),r=t.N,q=t.z
 return new A.Ao(new A.r6(B.hc,s),new A.r6(B.hc,s),new A.r6(B.hc,s),A.b([A.ah(["pais","Per\xfa","tasa",151,"modo","multiplicar","bandera","\ud83c\uddf5\ud83c\uddea"],r,q),A.ah(["pais","Chile","tasa",0.535,"modo","multiplicar","bandera","\ud83c\udde8\ud83c\uddf1"],r,q),A.ah(["pais","Colombia","tasa",8,"modo","dividir","bandera","\ud83c\udde8\ud83c\uddf4"],r,q),A.ah(["pais","EE.UU.","tasa",480,"modo","multiplicar","bandera","\ud83c\uddfa\ud83c\uddf8"],r,q)],t.H7))}}
@@ -76188,8 +76188,8 @@ p=q.h(0,"tasa")
 o=q.h(0,"modo")==="dividir"
 if(a==="soles"){s=o?l/p:l*p
 m.b=s
-m.c=s/382.6318}else if(a==="bolivares"){m.a=o?s*p:s/p
-m.c=s/382.6318}else if(a==="dollarBCV"){s=m.b=r*382.6318
+m.c=s/385.272}else if(a==="bolivares"){m.a=o?s*p:s/p
+m.c=s/385.272}else if(a==="dollarBCV"){s=m.b=r*385.272
 m.a=o?s*p:s/p}n.am(new A.abI(m,n,a))},
 a9g(){return this.va("")},
 zE(a){A.pn(new A.kq(a))
@@ -76198,11 +76198,11 @@ a73(){this.d.kz(B.k7)
 this.e.kz(B.k7)
 this.f.kz(B.k7)},
 ZI(){var s=this,r=s.r,q=r[s.x].h(0,"tasa"),p=r[s.x].h(0,"pais")
-A.pn(new A.kq("Calculadora EADON\nActualizaci\xf3n 09-02-2025\nPa\xeds seleccionado: "+r[s.x].h(0,"bandera")+" "+p+"\nCantidad enviada: "+s.d.a.a+"\nTasa: "+A.m(q)+" Bs.\nCantidad en Bs. a recibir: "+s.e.a.a+"\nD\xf3lares (BCV): "+s.f.a.a+" - Tasa BCV: 382.6318 Bs."))
+A.pn(new A.kq("Calculadora EADON\nActualizaci\xf3n 10-02-2025\nPa\xeds seleccionado: "+r[s.x].h(0,"bandera")+" "+p+"\nCantidad enviada: "+s.d.a.a+"\nTasa: "+A.m(q)+" Bs.\nCantidad en Bs. a recibir: "+s.e.a.a+"\nD\xf3lares (BCV): "+s.f.a.a+" - Tasa BCV: 385.272 Bs."))
 s.c.ak(t.Pu).f.Gf(B.MJ)},
 L(a){var s=this,r=null,q=s.r,p=q[s.x].h(0,"tasa"),o=q[s.x].h(0,"pais")
 q=s.x
-return A.Uz(A.b([new A.pC(A.ajM(4,new A.abK(s),!0,t.kZ),q,new A.abL(s),!0,r,t.CB),A.akj(s.d,A.Zj(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.di,"Tasa "+A.m(p)+" Bs - Monto a Enviar ("+o+")",!0,!0,r,r,r,r,r,r,r,r,A.vW(r,r,B.iZ,r,r,new A.abM(s),r,r,r),r,r,r,r),B.k9,new A.abN(s)),A.akj(s.e,A.Zj(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.di,"Cantidad en Bs. a Recibir",!0,!0,r,r,r,r,r,r,r,r,A.vW(r,r,B.iZ,r,r,new A.abO(s),r,r,r),r,r,r,r),B.k9,new A.abP(s)),A.akj(s.f,A.Zj(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.di,"D\xf3lar (BCV) - 382.6318 Bs",!0,!0,r,r,r,r,r,r,r,r,A.vW(r,r,B.iZ,r,r,new A.abQ(s),r,r,r),r,r,r,r),B.k9,new A.abR(s)),B.et,A.an_(B.RL,s.ga72(),A.an0(r,r,B.Bl,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.My,A.an_(B.RN,s.gZH(),A.an0(r,r,B.Bd,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cQ,B.br,B.cs)}}
+return A.Uz(A.b([new A.pC(A.ajM(4,new A.abK(s),!0,t.kZ),q,new A.abL(s),!0,r,t.CB),A.akj(s.d,A.Zj(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.di,"Tasa "+A.m(p)+" Bs - Monto a Enviar ("+o+")",!0,!0,r,r,r,r,r,r,r,r,A.vW(r,r,B.iZ,r,r,new A.abM(s),r,r,r),r,r,r,r),B.k9,new A.abN(s)),A.akj(s.e,A.Zj(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.di,"Cantidad en Bs. a Recibir",!0,!0,r,r,r,r,r,r,r,r,A.vW(r,r,B.iZ,r,r,new A.abO(s),r,r,r),r,r,r,r),B.k9,new A.abP(s)),A.akj(s.f,A.Zj(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.di,"D\xf3lar (BCV) - 385.272 Bs",!0,!0,r,r,r,r,r,r,r,r,A.vW(r,r,B.iZ,r,r,new A.abQ(s),r,r,r),r,r,r,r),B.k9,new A.abR(s)),B.et,A.an_(B.RK,s.ga72(),A.an0(r,r,B.Bl,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),B.My,A.an_(B.RM,s.gZH(),A.an0(r,r,B.Bd,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],t.E),B.cQ,B.br,B.cs)}}
 A.abI.prototype={
 $0(){var s=this,r=s.c
 if(r!=="soles")s.b.d.sfi(B.c.a3(s.a.a,2))
@@ -79105,12 +79105,12 @@ B.D=new A.pj(0,"none")
 B.BY=new A.D(1,0.03137254901960784,0.03137254901960784,0.03137254901960784,B.h)
 B.ci=new A.fB(6)
 B.Qi=new A.k(!0,B.BY,null,null,null,null,null,B.ci,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.RI=new A.hB("Actualizaci\xf3n 09-02-2025",null,B.Qi,null,null,null,null,null,null)
+B.RN=new A.hB("Actualizaci\xf3n 10-02-2025",null,B.Qi,null,null,null,null,null,null)
 B.et=new A.lw(null,20,null,null)
 B.AW=new A.Ex(null)
-B.Fq=A.b(s([B.RI,B.et,B.AW]),t.E)
-B.C3=new A.pr(B.aH,B.jk,B.cs,B.aZ,null,B.cD,null,0,B.Fq,null)
-B.B0=new A.iV(B.a8,null,null,B.C3,null)
+B.Fp=A.b(s([B.RN,B.et,B.AW]),t.E)
+B.C2=new A.pr(B.aH,B.jk,B.cs,B.aZ,null,B.cD,null,0,B.Fp,null)
+B.B1=new A.iV(B.a8,null,null,B.C2,null)
 B.B2=new A.uv(null,null,null,null,null,null,null,null,null)
 B.B3=new A.uw(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.le=new A.db(0,B.q)
@@ -79205,11 +79205,11 @@ B.C1=new A.D(0.9411764705882353,0.7529411764705882,0.7529411764705882,0.75294117
 B.br=new A.l1(0,"start")
 B.cQ=new A.mH(3,"stretch")
 B.Oj=new A.k(!0,null,null,null,null,null,24,B.ci,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.RK=new A.hB("Calculadora E-ADON",null,B.Oj,null,null,null,null,null,null)
-B.B1=new A.iV(B.a8,null,null,B.RK,null)
+B.RJ=new A.hB("Calculadora E-ADON",null,B.Oj,null,null,null,null,null,null)
+B.B0=new A.iV(B.a8,null,null,B.RJ,null)
 B.Dm=new A.vw(null)
-B.Go=A.b(s([B.B1,B.et,B.Dm]),t.E)
-B.C2=new A.pr(B.aH,B.br,B.cs,B.cQ,null,B.cD,null,0,B.Go,null)
+B.Go=A.b(s([B.B0,B.et,B.Dm]),t.E)
+B.C3=new A.pr(B.aH,B.br,B.cs,B.cQ,null,B.cD,null,0,B.Go,null)
 B.f1=new A.fx(0,"cut")
 B.f2=new A.fx(1,"copy")
 B.f3=new A.fx(2,"paste")
@@ -79776,7 +79776,7 @@ B.zf=new A.b4(-1,B.C,B.bk,B.ct,5)
 B.rO=new A.h(0,6)
 B.zB=new A.b4(0,B.C,B.bl,B.rO,10)
 B.zI=new A.b4(0,B.C,B.bd,B.bt,18)
-B.Fp=A.b(s([B.zf,B.zB,B.zI]),t.V)
+B.Fq=A.b(s([B.zf,B.zB,B.zI]),t.V)
 B.ju=new A.h(0,5)
 B.zk=new A.b4(-3,B.C,B.bk,B.ju,5)
 B.jv=new A.h(0,8)
@@ -79805,7 +79805,7 @@ B.IO=new A.h(0,24)
 B.zE=new A.b4(3,B.C,B.bl,B.IO,38)
 B.zy=new A.b4(8,B.C,B.bd,B.rP,46)
 B.FC=A.b(s([B.zm,B.zE,B.zy]),t.V)
-B.HV=new A.cw([0,B.G1,1,B.Gh,2,B.Fm,3,B.Gb,4,B.ED,6,B.Fp,8,B.EY,9,B.Fc,12,B.Ft,16,B.Fs,24,B.FC],A.am("cw<n,T<b4>>"))
+B.HV=new A.cw([0,B.G1,1,B.Gh,2,B.Fm,3,B.Gb,4,B.ED,6,B.Fq,8,B.EY,9,B.Fc,12,B.Ft,16,B.Fs,24,B.FC],A.am("cw<n,T<b4>>"))
 B.bp=new A.e(4294968065)
 B.jS=new A.W(B.bp,!1,!1,!0,!1,B.m)
 B.be=new A.e(4294968066)
@@ -81043,11 +81043,11 @@ B.MG=new A.im(3,"hide")
 B.UV=new A.im(4,"remove")
 B.xH=new A.im(5,"timeout")
 B.MH=new A.qW(null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.RJ=new A.hB("Texto copiado al portapapeles",null,null,null,null,null,null,null,null)
+B.RI=new A.hB("Texto copiado al portapapeles",null,null,null,null,null,null,null,null)
 B.lT=new A.aH(4e6)
-B.MI=new A.lz(B.RJ,null,null,null,null,null,null,null,null,null,null,null,null,B.lT,null,null,null,B.V,null)
-B.RM=new A.hB("Montos copiados al portapapeles",null,null,null,null,null,null,null,null)
-B.MJ=new A.lz(B.RM,null,null,null,null,null,null,null,null,null,null,null,null,B.lT,null,null,null,B.V,null)
+B.MI=new A.lz(B.RI,null,null,null,null,null,null,null,null,null,null,null,null,B.lT,null,null,null,B.V,null)
+B.RL=new A.hB("Montos copiados al portapapeles",null,null,null,null,null,null,null,null)
+B.MJ=new A.lz(B.RL,null,null,null,null,null,null,null,null,null,null,null,null,B.lT,null,null,null,B.V,null)
 B.xI=new A.yw(0,"permissive")
 B.MK=new A.yw(1,"normal")
 B.ML=new A.yw(2,"forced")
@@ -81403,9 +81403,9 @@ B.NQ=new A.k(!0,B.l,null,".AppleSystemUIFont",null,null,null,null,null,null,null
 B.RH=new A.dj(B.Pv,B.Oz,B.Pw,B.Q4,B.Oc,B.Ok,B.OT,B.PS,B.P6,B.QB,B.NG,B.O1,B.Qx,B.QQ,B.NQ)
 B.Bq=new A.D(1,0.9647058823529412,0.9568627450980393,0.9568627450980393,B.h)
 B.NX=new A.k(!0,B.Bq,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.RL=new A.hB("Reiniciar",null,B.NX,null,null,null,null,null,null)
+B.RK=new A.hB("Reiniciar",null,B.NX,null,null,null,null,null,null)
 B.QP=new A.k(!0,B.k,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.RN=new A.hB("Copiar Todos los Montos",null,B.QP,null,null,null,null,null,null)
+B.RM=new A.hB("Copiar Todos los Montos",null,B.QP,null,null,null,null,null,null)
 B.UX=new A.a8u(0,"system")
 B.J0=new A.h(0.056,0.024)
 B.Je=new A.h(0.108,0.3085)
