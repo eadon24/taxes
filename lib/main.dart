@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Actualización 25-02-2025',
+                  'Actualización 26-02-2025',
                   style: TextStyle(
                     color: Color.fromARGB(255, 8, 8, 8),
                     fontWeight: FontWeight.bold,
@@ -113,9 +113,9 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
     {'pais': 'EE.UU.', 'tasa': 540.0, 'modo': 'multiplicar', 'bandera': '🇺🇸'},
   ];
 
-  double dollarBCVRate = 411.0857;
+  double dollarBCVRate = 414.04;
   int selectedIndex = 0;
-  String updateText = 'Actualización 25-02-2025';
+  String updateText = 'Actualización 26-02-2025';
 
   void _updateFields({String source = ''}) {
     double soles = double.tryParse(_solesController.text) ?? 0.0;
