@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Actualización 04-03-2026',
+                  'Actualización 05-03-2026',
                   style: TextStyle(
                     color: Color.fromARGB(255, 8, 8, 8),
                     fontWeight: FontWeight.bold,
@@ -108,14 +108,14 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
 
   final List<Map<String, dynamic>> tasasPorPais = [
     {'pais': 'Perú', 'tasa': 177.50, 'modo': 'multiplicar', 'bandera': '🇵🇪'},
-    {'pais': 'Chile', 'tasa': 0.6450, 'modo': 'multiplicar', 'bandera': '🇨🇱'},
+    {'pais': 'Chile', 'tasa': 0.0, 'modo': 'multiplicar', 'bandera': '🇨🇱'},
     {'pais': 'Colombia', 'tasa': 6.30, 'modo': 'dividir', 'bandera': '🇨🇴'},
     {'pais': 'EE.UU.', 'tasa': 570.0, 'modo': 'multiplicar', 'bandera': '🇺🇸'},
   ];
 
-  double dollarBCVRate = 425.67410;
+  double dollarBCVRate = 427.9302;
   int selectedIndex = 0;
-  String updateText = 'Actualización 04-03-2026';
+  String updateText = 'Actualización 05-03-2026';
 
   void _updateFields({String source = ''}) {
     double soles = double.tryParse(_solesController.text) ?? 0.0;
