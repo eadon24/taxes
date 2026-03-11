@@ -107,7 +107,7 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   final TextEditingController _dollarBCVController = TextEditingController();
 
   final List<Map<String, dynamic>> tasasPorPais = [
-    {'pais': 'Perú', 'tasa': 172.00, 'modo': 'multiplicar', 'bandera': '🇵🇪'},
+    {'pais': 'Perú', 'tasa': 174.00, 'modo': 'multiplicar', 'bandera': '🇵🇪'},
     {'pais': 'Chile', 'tasa': 0.645, 'modo': 'multiplicar', 'bandera': '🇨🇱'},
     {'pais': 'Colombia', 'tasa': 6.20, 'modo': 'dividir', 'bandera': '🇨🇴'},
     {'pais': 'EE.UU.', 'tasa': 570.0, 'modo': 'multiplicar', 'bandera': '🇺🇸'},
