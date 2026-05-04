@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Actualización 03-05-2026',
+                  'Actualización 04-05-2026',
                   style: TextStyle(
                     color: Color.fromARGB(255, 8, 8, 8),
                     fontWeight: FontWeight.bold,
@@ -107,16 +107,16 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   final TextEditingController _dollarBCVController = TextEditingController();
 
   final List<Map<String, dynamic>> tasasPorPais = [
-    {'pais': 'Perú', 'tasa': 168.00, 'modo': 'multiplicar', 'bandera': '🇵🇪'},
-    {'pais': 'Chile', 'tasa': 0.640, 'modo': 'multiplicar', 'bandera': '🇨🇱'},
+    {'pais': 'Perú', 'tasa': 170.00, 'modo': 'multiplicar', 'bandera': '🇵🇪'},
+    {'pais': 'Chile', 'tasa': 0.660, 'modo': 'multiplicar', 'bandera': '🇨🇱'},
     /*{'pais': 'Colombia', 'tasa': 6.80, 'modo': 'dividir', 'bandera': '🇨🇴'},*/
-    {'pais': 'EE.UU.', 'tasa': 580.0, 'modo': 'multiplicar', 'bandera': '🇺🇸'},
+    {'pais': 'EE.UU.', 'tasa': 600.0, 'modo': 'multiplicar', 'bandera': '🇺🇸'},
   ];
 
   double dollarBCVRate = 489.5547;
   int selectedIndex = 0;
 
-  String updateText = 'Actualización 03-05-2026';
+  String updateText = 'Actualización 04-05-2026';
 
   void _updateFields({String source = ''}) {
     double soles = double.tryParse(_solesController.text) ?? 0.0;
@@ -167,7 +167,8 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
     String pais = tasasPorPais[selectedIndex]['pais'];
     String bandera = tasasPorPais[selectedIndex]['bandera'];
 
-    String allValues = "Calculadora EADON\n"
+    String allValues =
+        "Calculadora EADON\n"
         "$updateText\n"
         "País seleccionado: $bandera $pais\n"
         "Cantidad enviada: ${_solesController.text}\n"
