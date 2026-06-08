@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Actualización 05-06-2026',
+                  'Actualización 08-06-2026',
                   style: TextStyle(
                     color: Color.fromARGB(255, 8, 8, 8),
                     fontWeight: FontWeight.bold,
@@ -110,13 +110,13 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
     {'pais': 'Perú', 'tasa': 206.00, 'modo': 'multiplicar', 'bandera': '🇵🇪'},
     {'pais': 'Chile', 'tasa': 0.770, 'modo': 'multiplicar', 'bandera': '🇨🇱'},
     /*{'pais': 'Colombia', 'tasa': 6.80, 'modo': 'dividir', 'bandera': '🇨🇴'},*/
-    {'pais': 'EE.UU.', 'tasa': 690.0, 'modo': 'multiplicar', 'bandera': '🇺🇸'},
+    {'pais': 'EE.UU.', 'tasa': 705.0, 'modo': 'multiplicar', 'bandera': '🇺🇸'},
   ];
 
-  double dollarBCVRate = 563.2892;
+  double dollarBCVRate = 567.6828;
   int selectedIndex = 0;
 
-  String updateText = 'Actualización 05-06-2026';
+  String updateText = 'Actualización 08-06-2026';
 
   void _updateFields({String source = ''}) {
     double soles = double.tryParse(_solesController.text) ?? 0.0;
@@ -167,8 +167,7 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
     String pais = tasasPorPais[selectedIndex]['pais'];
     String bandera = tasasPorPais[selectedIndex]['bandera'];
 
-    String allValues =
-        "Calculadora EADON\n"
+    String allValues = "Calculadora EADON\n"
         "$updateText\n"
         "País seleccionado: $bandera $pais\n"
         "Cantidad enviada: ${_solesController.text}\n"
