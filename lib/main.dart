@@ -1,5 +1,8 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:http/http.dart' as http;
 
 void main() {
   runApp(const MyApp());
@@ -39,17 +42,7 @@ class MyApp extends StatelessWidget {
           child: const Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'Actualización 22-07-2026',
-                  style: TextStyle(
-                    color: Color.fromARGB(255, 8, 8, 8),
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                SizedBox(height: 20),
-                CalculatorContainer(),
-              ],
+              children: [CalculatorContainer()],
             ),
           ),
         ),
@@ -106,17 +99,51 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   final TextEditingController _bolivaresController = TextEditingController();
   final TextEditingController _dollarBCVController = TextEditingController();
 
-  final List<Map<String, dynamic>> tasasPorPais = [
-    {'pais': 'Perú', 'tasa': 240.00, 'modo': 'multiplicar', 'bandera': '🇵🇪'},
-    {'pais': 'Chile', 'tasa': 0.850, 'modo': 'multiplicar', 'bandera': '🇨🇱'},
-    /*{'pais': 'Colombia', 'tasa': 6.80, 'modo': 'dividir', 'bandera': '🇨🇴'},*/
-    {'pais': 'EE.UU.', 'tasa': 808, 'modo': 'multiplicar', 'bandera': '🇺🇸'},
-  ];
+  List<Map<String, dynamic>> tasasPorPais = [];
 
-  double dollarBCVRate = 737.23;
+  double dollarBCVRate = 0.0;
   int selectedIndex = 0;
 
-  String updateText = 'Actualización 22-07-2026';
+  String updateText = '';
+  bool cargando = true;
+
+  @override
+  void initState() {
+    super.initState();
+    cargarTasas();
+  }
+
+  Future<void> cargarTasas() async {
+    try {
+      final response = await http.get(
+        Uri.parse('https://taxes-ten.vercel.app/tasas.json'),
+      );
+
+      debugPrint("Status: ${response.statusCode}");
+      debugPrint("Body: ${response.body}");
+
+      if (response.statusCode == 200) {
+        final data = jsonDecode(response.body);
+
+        setState(() {
+          updateText = "Actualización ${data['fecha']}";
+          dollarBCVRate = (data['bcv'] as num).toDouble();
+          tasasPorPais = List<Map<String, dynamic>>.from(data['tasas']);
+          cargando = false;
+        });
+      } else {
+        setState(() {
+          cargando = false;
+        });
+      }
+    } catch (e) {
+      debugPrint("Error cargando JSON: $e");
+
+      setState(() {
+        cargando = false;
+      });
+    }
+  }
 
   void _updateFields({String source = ''}) {
     double soles = double.tryParse(_solesController.text) ?? 0.0;
@@ -184,12 +211,32 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
 
   @override
   Widget build(BuildContext context) {
+    if (cargando) {
+      return const Center(child: CircularProgressIndicator());
+    }
+
+    if (tasasPorPais.isEmpty) {
+      return const Center(
+        child: Text(
+          'No se pudieron cargar las tasas',
+          style: TextStyle(fontSize: 18),
+        ),
+      );
+    }
+
     double exchangeRate = tasasPorPais[selectedIndex]['tasa'];
     String pais = tasasPorPais[selectedIndex]['pais'];
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
+        Center(
+          child: Text(
+            updateText,
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+          ),
+        ),
+        const SizedBox(height: 20),
         DropdownButton<int>(
           value: selectedIndex,
           isExpanded: true,
