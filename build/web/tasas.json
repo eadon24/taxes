@@ -1,0 +1,24 @@
+{
+  "fecha": "22-07-2026",
+  "bcv": 737.2321,
+  "tasas": [
+    {
+      "pais": "Perú",
+      "tasa": 239.00,
+      "modo": "multiplicar",
+      "bandera": "🇵🇪"
+    },
+    {
+      "pais": "Chile",
+      "tasa": 0.850,
+      "modo": "multiplicar",
+      "bandera": "🇨🇱"
+    },
+    {
+      "pais": "EE.UU.",
+      "tasa": 808.00,
+      "modo": "multiplicar",
+      "bandera": "🇺🇸"
+    }
+  ]
+}

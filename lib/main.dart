@@ -116,7 +116,7 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
   Future<void> cargarTasas() async {
     try {
       final response = await http.get(
-        Uri.parse('https://taxes-ten.vercel.app/tasas.json'),
+        Uri.parse('/tasas.json'),
       );
 
       debugPrint("Status: ${response.statusCode}");
@@ -194,8 +194,7 @@ class _ExchangeCalculatorState extends State<ExchangeCalculator> {
     String pais = tasasPorPais[selectedIndex]['pais'];
     String bandera = tasasPorPais[selectedIndex]['bandera'];
 
-    String allValues =
-        "Calculadora EADON\n"
+    String allValues = "Calculadora EADON\n"
         "$updateText\n"
         "País seleccionado: $bandera $pais\n"
         "Cantidad enviada: ${_solesController.text}\n"
