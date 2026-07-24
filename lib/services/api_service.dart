@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 class ApiService {
   Future<bool> guardarTasas(String json) async {
     final response = await http.post(
-      Uri.parse('/api/save'),
+      Uri.parse('https://taxes-ten.vercel.app/api/save'),
       headers: {
         'Content-Type': 'application/json',
       },
@@ -13,11 +13,9 @@ class ApiService {
       }),
     );
 
-    if (response.statusCode == 200) {
-      return true;
-    }
+    print("STATUS: ${response.statusCode}");
+    print("BODY: ${response.body}");
 
-    print(response.body);
-    return false;
+    return response.statusCode == 200;
   }
 }
