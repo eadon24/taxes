@@ -1,0 +1,9 @@
+{
+  "buildCommand": "flutter build web",
+  "outputDirectory": "build/web",
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "@vercel/node"
+    }
+  }
+}
