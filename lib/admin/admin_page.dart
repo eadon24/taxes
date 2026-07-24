@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/tasa.dart';
 import '../services/json_service.dart';
+import '../services/api_service.dart';
 
 class AdminPage extends StatefulWidget {
   const AdminPage({super.key});
@@ -11,6 +12,7 @@ class AdminPage extends StatefulWidget {
 
 class _AdminPageState extends State<AdminPage> {
   final JsonService jsonService = JsonService();
+  final ApiService apiService = ApiService();
 
   final TextEditingController fechaController = TextEditingController();
   final TextEditingController bcvController = TextEditingController();
@@ -18,6 +20,7 @@ class _AdminPageState extends State<AdminPage> {
   List<Tasa> tasas = [];
 
   bool cargando = true;
+  bool guardando = false;
 
   @override
   void initState() {
@@ -38,14 +41,7 @@ class _AdminPageState extends State<AdminPage> {
 
   void agregarPais() {
     setState(() {
-      tasas.add(
-        Tasa(
-          pais: "",
-          tasa: 0,
-          modo: "multiplicar",
-          bandera: "🌎",
-        ),
-      );
+      tasas.add(Tasa(pais: "", tasa: 0, modo: "multiplicar", bandera: "🌎"));
     });
   }
 
@@ -55,14 +51,38 @@ class _AdminPageState extends State<AdminPage> {
     });
   }
 
+  Future<void> guardar() async {
+    setState(() {
+      guardando = true;
+    });
+
+    final json = jsonService.generarJson(
+      fecha: fechaController.text,
+      bcv: double.parse(bcvController.text),
+      tasas: tasas,
+    );
+
+    final ok = await apiService.guardarTasas(json);
+
+    if (!mounted) return;
+
+    setState(() {
+      guardando = false;
+    });
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          ok ? "✅ Tasas actualizadas correctamente" : "❌ Error al guardar",
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     if (cargando) {
-      return const Scaffold(
-        body: Center(
-          child: CircularProgressIndicator(),
-        ),
-      );
+      return const Scaffold(body: Center(child: CircularProgressIndicator()));
     }
 
     return Scaffold(
@@ -110,81 +130,73 @@ class _AdminPageState extends State<AdminPage> {
                     DataColumn(label: Text("Modo")),
                     DataColumn(label: Text("Acción")),
                   ],
-                  rows: List.generate(
-                    tasas.length,
-                    (index) {
-                      final tasa = tasas[index];
+                  rows: List.generate(tasas.length, (index) {
+                    final tasa = tasas[index];
 
-                      return DataRow(
-                        cells: [
-                          DataCell(
-                            SizedBox(
-                              width: 50,
-                              child: TextFormField(
-                                initialValue: tasa.bandera,
-                                onChanged: (v) => tasa.bandera = v,
-                              ),
+                    return DataRow(
+                      cells: [
+                        DataCell(
+                          SizedBox(
+                            width: 50,
+                            child: TextFormField(
+                              initialValue: tasa.bandera,
+                              onChanged: (v) => tasa.bandera = v,
                             ),
                           ),
-                          DataCell(
-                            SizedBox(
-                              width: 150,
-                              child: TextFormField(
-                                initialValue: tasa.pais,
-                                onChanged: (v) => tasa.pais = v,
-                              ),
+                        ),
+                        DataCell(
+                          SizedBox(
+                            width: 150,
+                            child: TextFormField(
+                              initialValue: tasa.pais,
+                              onChanged: (v) => tasa.pais = v,
                             ),
                           ),
-                          DataCell(
-                            SizedBox(
-                              width: 90,
-                              child: TextFormField(
-                                initialValue: tasa.tasa.toString(),
-                                keyboardType:
-                                    const TextInputType.numberWithOptions(
-                                  decimal: true,
-                                ),
-                                onChanged: (v) {
-                                  tasa.tasa = double.tryParse(v) ?? 0;
-                                },
-                              ),
-                            ),
-                          ),
-                          DataCell(
-                            DropdownButton<String>(
-                              value: tasa.modo,
-                              items: const [
-                                DropdownMenuItem(
-                                  value: "multiplicar",
-                                  child: Text("Multiplicar"),
-                                ),
-                                DropdownMenuItem(
-                                  value: "dividir",
-                                  child: Text("Dividir"),
-                                ),
-                              ],
+                        ),
+                        DataCell(
+                          SizedBox(
+                            width: 90,
+                            child: TextFormField(
+                              initialValue: tasa.tasa.toString(),
+                              keyboardType:
+                                  const TextInputType.numberWithOptions(
+                                    decimal: true,
+                                  ),
                               onChanged: (v) {
-                                setState(() {
-                                  tasa.modo = v!;
-                                });
+                                tasa.tasa = double.tryParse(v) ?? 0;
                               },
                             ),
                           ),
-                          DataCell(
-                            IconButton(
-                              icon: const Icon(
-                                Icons.delete,
-                                color: Colors.red,
+                        ),
+                        DataCell(
+                          DropdownButton<String>(
+                            value: tasa.modo,
+                            items: const [
+                              DropdownMenuItem(
+                                value: "multiplicar",
+                                child: Text("Multiplicar"),
                               ),
-                              onPressed: () {
-                                eliminarPais(index);
-                              },
-                            ),
+                              DropdownMenuItem(
+                                value: "dividir",
+                                child: Text("Dividir"),
+                              ),
+                            ],
+                            onChanged: (v) {
+                              setState(() {
+                                tasa.modo = v!;
+                              });
+                            },
                           ),
-                        ],
-                      );
-                    },
-                  ),
+                        ),
+                        DataCell(
+                          IconButton(
+                            icon: const Icon(Icons.delete, color: Colors.red),
+                            onPressed: () => eliminarPais(index),
+                          ),
+                        ),
+                      ],
+                    );
+                  }),
                 ),
               ),
             ),
@@ -198,29 +210,22 @@ class _AdminPageState extends State<AdminPage> {
                 ),
                 const Spacer(),
                 ElevatedButton.icon(
+                  onPressed: guardando ? null : guardar,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.green,
                     foregroundColor: Colors.white,
                   ),
-                  onPressed: () {
-                    final json = jsonService.generarJson(
-                      fecha: fechaController.text,
-                      bcv: double.parse(bcvController.text),
-                      tasas: tasas,
-                    );
-
-                    debugPrint(json);
-
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Text(
-                          "JSON generado correctamente",
-                        ),
-                      ),
-                    );
-                  },
-                  icon: const Icon(Icons.save),
-                  label: const Text("Guardar"),
+                  icon: guardando
+                      ? const SizedBox(
+                          width: 18,
+                          height: 18,
+                          child: CircularProgressIndicator(
+                            strokeWidth: 2,
+                            color: Colors.white,
+                          ),
+                        )
+                      : const Icon(Icons.save),
+                  label: Text(guardando ? "Guardando..." : "Guardar"),
                 ),
               ],
             ),

@@ -26,9 +26,7 @@ class _LoginPageState extends State<LoginPage> {
     if (ok) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(
-          builder: (_) => const AdminPage(),
-        ),
+        MaterialPageRoute(builder: (_) => const AdminPage()),
       );
     } else {
       setState(() {
@@ -47,9 +45,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Acceso Administrador"),
-      ),
+      appBar: AppBar(title: const Text("Acceso Administrador")),
       body: Center(
         child: SizedBox(
           width: 350,
@@ -65,7 +61,9 @@ class _LoginPageState extends State<LoginPage> {
                     size: 70,
                     color: Colors.blue,
                   ),
+
                   const SizedBox(height: 20),
+
                   TextField(
                     controller: usuarioController,
                     decoration: const InputDecoration(
@@ -73,7 +71,9 @@ class _LoginPageState extends State<LoginPage> {
                       border: OutlineInputBorder(),
                     ),
                   ),
+
                   const SizedBox(height: 20),
+
                   TextField(
                     controller: passwordController,
                     obscureText: ocultarPassword,
@@ -95,16 +95,14 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     onSubmitted: (_) => ingresar(),
                   ),
+
                   if (error != null) ...[
                     const SizedBox(height: 15),
-                    Text(
-                      error!,
-                      style: const TextStyle(
-                        color: Colors.red,
-                      ),
-                    ),
+                    Text(error!, style: const TextStyle(color: Colors.red)),
                   ],
+
                   const SizedBox(height: 25),
+
                   SizedBox(
                     width: double.infinity,
                     height: 45,
