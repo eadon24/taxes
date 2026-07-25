@@ -1,10 +1,10 @@
 {
-  "fecha": "24-07-2026",
-  "bcv": 100,
+  "fecha": "25-07-2026",
+  "bcv": 742.22,
   "tasas": [
     {
       "pais": "Perú",
-      "tasa": 242,
+      "tasa": 241,
       "modo": "multiplicar",
       "bandera": "🇵🇪"
     },
