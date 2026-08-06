@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 class ApiService {
   Future<bool> guardarTasas(String json) async {
     final response = await http.post(
-      Uri.parse('https://taxes-ten.vercel.app/api/save'),
+      Uri.parse('https://taxes-beryl.vercel.app/api/save'),
       headers: {
         'Content-Type': 'application/json',
       },
