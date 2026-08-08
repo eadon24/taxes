@@ -1,22 +1,22 @@
 {
-  "fecha": "07-08-2026",
-  "bcv": 756.70,
+  "fecha": "08-08-2026",
+  "bcv": 757.54,
   "tasas": [
     {
       "pais": "Perú",
-      "tasa": 237,
+      "tasa": 240,
       "modo": "multiplicar",
       "bandera": "🇵🇪"
     },
     {
       "pais": "Chile",
-      "tasa": 0.845,
+      "tasa": 0.848,
       "modo": "multiplicar",
       "bandera": "🇨🇱"
     },
     {
       "pais": "EE.UU.",
-      "tasa": 805,
+      "tasa": 815,
       "modo": "multiplicar",
       "bandera": "🇺🇸"
     }
