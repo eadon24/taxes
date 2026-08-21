@@ -3,12 +3,14 @@ class Tasa {
   double tasa;
   String modo;
   String bandera;
+  String tipo;
 
   Tasa({
     required this.pais,
     required this.tasa,
     required this.modo,
     required this.bandera,
+    required this.tipo,
   });
 
   factory Tasa.fromJson(Map<String, dynamic> json) {
@@ -17,6 +19,7 @@ class Tasa {
       tasa: (json['tasa'] as num).toDouble(),
       modo: json['modo'],
       bandera: json['bandera'],
+      tipo: json['tipo'] ?? 'normal',
     );
   }
 
@@ -26,6 +29,7 @@ class Tasa {
       'tasa': tasa,
       'modo': modo,
       'bandera': bandera,
+      'tipo': tipo,
     };
   }
 }

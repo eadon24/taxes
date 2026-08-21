@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../models/tasa.dart';
 import '../services/json_service.dart';
 import '../services/api_service.dart';
@@ -28,20 +29,43 @@ class _AdminPageState extends State<AdminPage> {
     cargar();
   }
 
-  Future<void> cargar() async {
-    final datos = await jsonService.cargarDatos();
+  @override
+  void dispose() {
+    fechaController.dispose();
+    bcvController.dispose();
+    super.dispose();
+  }
 
-    setState(() {
-      fechaController.text = datos["fecha"];
-      bcvController.text = datos["bcv"].toString();
-      tasas = datos["tasas"];
-      cargando = false;
-    });
+  Future<void> cargar() async {
+    try {
+      final datos = await jsonService.cargarDatos();
+
+      setState(() {
+        fechaController.text = datos["fecha"].toString();
+        bcvController.text = datos["bcv"].toString();
+        tasas = datos["tasas"];
+        cargando = false;
+      });
+    } catch (e) {
+      debugPrint("Error cargando tasas: $e");
+
+      setState(() {
+        cargando = false;
+      });
+    }
   }
 
   void agregarPais() {
     setState(() {
-      tasas.add(Tasa(pais: "", tasa: 0, modo: "multiplicar", bandera: "🌎"));
+      tasas.add(
+        Tasa(
+          pais: "",
+          tasa: 0,
+          modo: "multiplicar",
+          bandera: "🌎",
+          tipo: "normal",
+        ),
+      );
     });
   }
 
@@ -52,37 +76,66 @@ class _AdminPageState extends State<AdminPage> {
   }
 
   Future<void> guardar() async {
+    final bcv = double.tryParse(
+      bcvController.text.replaceAll(',', '.'),
+    );
+
+    if (bcv == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text("❌ El BCV no es válido"),
+        ),
+      );
+      return;
+    }
+
     setState(() {
       guardando = true;
     });
 
-    final json = jsonService.generarJson(
-      fecha: fechaController.text,
-      bcv: double.parse(bcvController.text),
-      tasas: tasas,
-    );
+    try {
+      final json = jsonService.generarJson(
+        fecha: fechaController.text,
+        bcv: bcv,
+        tasas: tasas,
+      );
 
-    final ok = await apiService.guardarTasas(json);
+      final ok = await apiService.guardarTasas(json);
 
-    if (!mounted) return;
+      if (!mounted) return;
 
-    setState(() {
-      guardando = false;
-    });
-
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(
-          ok ? "✅ Tasas actualizadas correctamente" : "❌ Error al guardar",
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            ok ? "✅ Tasas actualizadas correctamente" : "❌ Error al guardar",
+          ),
         ),
-      ),
-    );
+      );
+    } catch (e) {
+      if (!mounted) return;
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text("❌ Error: $e"),
+        ),
+      );
+    } finally {
+      if (mounted) {
+        setState(() {
+          guardando = false;
+        });
+      }
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     if (cargando) {
-      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+      return const Scaffold(
+        body: Center(
+          child: CircularProgressIndicator(),
+        ),
+      );
     }
 
     return Scaffold(
@@ -95,6 +148,9 @@ class _AdminPageState extends State<AdminPage> {
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
+            // --------------------------------------------------
+            // FECHA Y BCV
+            // --------------------------------------------------
             Row(
               children: [
                 Expanded(
@@ -110,7 +166,9 @@ class _AdminPageState extends State<AdminPage> {
                 Expanded(
                   child: TextField(
                     controller: bcvController,
-                    keyboardType: TextInputType.number,
+                    keyboardType: const TextInputType.numberWithOptions(
+                      decimal: true,
+                    ),
                     decoration: const InputDecoration(
                       labelText: "BCV",
                       border: OutlineInputBorder(),
@@ -119,88 +177,193 @@ class _AdminPageState extends State<AdminPage> {
                 ),
               ],
             ),
+
             const SizedBox(height: 25),
+
+            // --------------------------------------------------
+            // TABLA DE TASAS
+            // --------------------------------------------------
             Expanded(
               child: SingleChildScrollView(
-                child: DataTable(
-                  columns: const [
-                    DataColumn(label: Text("Bandera")),
-                    DataColumn(label: Text("País")),
-                    DataColumn(label: Text("Tasa")),
-                    DataColumn(label: Text("Modo")),
-                    DataColumn(label: Text("Acción")),
-                  ],
-                  rows: List.generate(tasas.length, (index) {
-                    final tasa = tasas[index];
+                scrollDirection: Axis.horizontal,
+                child: SingleChildScrollView(
+                  child: DataTable(
+                    columns: const [
+                      DataColumn(
+                        label: Text("Bandera"),
+                      ),
+                      DataColumn(
+                        label: Text("País"),
+                      ),
+                      DataColumn(
+                        label: Text("Tipo"),
+                      ),
+                      DataColumn(
+                        label: Text("Tasa"),
+                      ),
+                      DataColumn(
+                        label: Text("Modo"),
+                      ),
+                      DataColumn(
+                        label: Text("Acción"),
+                      ),
+                    ],
+                    rows: List.generate(
+                      tasas.length,
+                      (index) {
+                        final tasa = tasas[index];
 
-                    return DataRow(
-                      cells: [
-                        DataCell(
-                          SizedBox(
-                            width: 50,
-                            child: TextFormField(
-                              initialValue: tasa.bandera,
-                              onChanged: (v) => tasa.bandera = v,
-                            ),
-                          ),
-                        ),
-                        DataCell(
-                          SizedBox(
-                            width: 150,
-                            child: TextFormField(
-                              initialValue: tasa.pais,
-                              onChanged: (v) => tasa.pais = v,
-                            ),
-                          ),
-                        ),
-                        DataCell(
-                          SizedBox(
-                            width: 90,
-                            child: TextFormField(
-                              initialValue: tasa.tasa.toString(),
-                              keyboardType:
-                                  const TextInputType.numberWithOptions(
-                                decimal: true,
+                        return DataRow(
+                          cells: [
+                            // --------------------------------
+                            // BANDERA
+                            // --------------------------------
+                            DataCell(
+                              SizedBox(
+                                width: 60,
+                                child: TextFormField(
+                                  initialValue: tasa.bandera,
+                                  onChanged: (value) {
+                                    tasa.bandera = value;
+                                  },
+                                  textAlign: TextAlign.center,
+                                ),
                               ),
-                              onChanged: (v) {
-                                tasa.tasa = double.tryParse(v) ?? 0;
-                              },
                             ),
-                          ),
-                        ),
-                        DataCell(
-                          DropdownButton<String>(
-                            value: tasa.modo,
-                            items: const [
-                              DropdownMenuItem(
-                                value: "multiplicar",
-                                child: Text("Multiplicar"),
+
+                            // --------------------------------
+                            // PAÍS
+                            // --------------------------------
+                            DataCell(
+                              SizedBox(
+                                width: 150,
+                                child: TextFormField(
+                                  initialValue: tasa.pais,
+                                  onChanged: (value) {
+                                    tasa.pais = value;
+                                  },
+                                ),
                               ),
-                              DropdownMenuItem(
-                                value: "dividir",
-                                child: Text("Dividir"),
+                            ),
+
+                            // --------------------------------
+                            // TIPO
+                            // --------------------------------
+                            DataCell(
+                              DropdownButton<String>(
+                                value: [
+                                  "normal",
+                                  "regular",
+                                  "vip1",
+                                  "vip2",
+                                ].contains(tasa.tipo)
+                                    ? tasa.tipo
+                                    : "normal",
+                                items: const [
+                                  DropdownMenuItem(
+                                    value: "normal",
+                                    child: Text("Normal"),
+                                  ),
+                                  DropdownMenuItem(
+                                    value: "regular",
+                                    child: Text("Regular"),
+                                  ),
+                                  DropdownMenuItem(
+                                    value: "vip1",
+                                    child: Text("VIP 1"),
+                                  ),
+                                  DropdownMenuItem(
+                                    value: "vip2",
+                                    child: Text("VIP 2"),
+                                  ),
+                                ],
+                                onChanged: (value) {
+                                  if (value == null) return;
+
+                                  setState(() {
+                                    tasa.tipo = value;
+                                  });
+                                },
                               ),
-                            ],
-                            onChanged: (v) {
-                              setState(() {
-                                tasa.modo = v!;
-                              });
-                            },
-                          ),
-                        ),
-                        DataCell(
-                          IconButton(
-                            icon: const Icon(Icons.delete, color: Colors.red),
-                            onPressed: () => eliminarPais(index),
-                          ),
-                        ),
-                      ],
-                    );
-                  }),
+                            ),
+
+                            // --------------------------------
+                            // TASA
+                            // --------------------------------
+                            DataCell(
+                              SizedBox(
+                                width: 100,
+                                child: TextFormField(
+                                  initialValue: tasa.tasa.toString(),
+                                  keyboardType:
+                                      const TextInputType.numberWithOptions(
+                                    decimal: true,
+                                  ),
+                                  onChanged: (value) {
+                                    tasa.tasa = double.tryParse(
+                                          value.replaceAll(',', '.'),
+                                        ) ??
+                                        0;
+                                  },
+                                ),
+                              ),
+                            ),
+
+                            // --------------------------------
+                            // MODO
+                            // --------------------------------
+                            DataCell(
+                              DropdownButton<String>(
+                                value: tasa.modo,
+                                items: const [
+                                  DropdownMenuItem(
+                                    value: "multiplicar",
+                                    child: Text("Multiplicar"),
+                                  ),
+                                  DropdownMenuItem(
+                                    value: "dividir",
+                                    child: Text("Dividir"),
+                                  ),
+                                ],
+                                onChanged: (value) {
+                                  if (value == null) return;
+
+                                  setState(() {
+                                    tasa.modo = value;
+                                  });
+                                },
+                              ),
+                            ),
+
+                            // --------------------------------
+                            // ELIMINAR
+                            // --------------------------------
+                            DataCell(
+                              IconButton(
+                                icon: const Icon(
+                                  Icons.delete,
+                                  color: Colors.red,
+                                ),
+                                tooltip: "Eliminar",
+                                onPressed: () {
+                                  eliminarPais(index);
+                                },
+                              ),
+                            ),
+                          ],
+                        );
+                      },
+                    ),
+                  ),
                 ),
               ),
             ),
+
             const SizedBox(height: 20),
+
+            // --------------------------------------------------
+            // BOTONES
+            // --------------------------------------------------
             Row(
               children: [
                 ElevatedButton.icon(
@@ -225,7 +388,9 @@ class _AdminPageState extends State<AdminPage> {
                           ),
                         )
                       : const Icon(Icons.save),
-                  label: Text(guardando ? "Guardando..." : "Guardar"),
+                  label: Text(
+                    guardando ? "Guardando..." : "Guardar",
+                  ),
                 ),
               ],
             ),

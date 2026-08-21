@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'exchange_calculator.dart';
 
 class CalculatorContainer extends StatelessWidget {
@@ -20,21 +21,23 @@ class CalculatorContainer extends StatelessWidget {
           ),
         ],
       ),
-      child: const Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Center(
-            child: Text(
-              'Calculadora E-ADON',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
+      child: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: const [
+            Center(
+              child: Text(
+                'Calculadora E-ADON',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
-          ),
-          SizedBox(height: 20),
-          ExchangeCalculator(),
-        ],
+            SizedBox(height: 20),
+            ExchangeCalculator(),
+          ],
+        ),
       ),
     );
   }
