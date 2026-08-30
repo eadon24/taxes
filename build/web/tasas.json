@@ -1,31 +1,31 @@
 {
-  "fecha": "29-08-2026",
+  "fecha": "30-08-2026",
   "bcv": 794.9917,
   "tasas": [
     {
       "pais": "Perú",
       "tipo": "regular",
-      "tasa": 264,
+      "tasa": 263,
       "modo": "multiplicar",
       "bandera": "🇵🇪"
     },
     {
       "pais": "Perú",
       "tipo": "vip1",
-      "tasa": 265,
+      "tasa": 264,
       "modo": "multiplicar",
       "bandera": "🇵🇪"
     },
     {
       "pais": "Perú",
       "tipo": "vip2",
-      "tasa": 266,
+      "tasa": 265,
       "modo": "multiplicar",
       "bandera": "🇵🇪"
     },
     {
       "pais": "Chile",
-      "tasa": 0.940,
+      "tasa": 0.930,
       "modo": "multiplicar",
       "bandera": "🇨🇱"
     },
