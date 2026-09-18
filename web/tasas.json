@@ -5,21 +5,21 @@
     {
       "pais": "Perú",
       "tipo": "regular",
-      "tasa": 266,
+      "tasa": 268,
       "modo": "multiplicar",
       "bandera": "🇵🇪"
     },
     {
       "pais": "Perú",
       "tipo": "vip1",
-      "tasa": 267,
+      "tasa": 269,
       "modo": "multiplicar",
       "bandera": "🇵🇪"
     },
     {
       "pais": "Perú",
       "tipo": "vip2",
-      "tasa": 268,
+      "tasa": 270,
       "modo": "multiplicar",
       "bandera": "🇵🇪"
     },
