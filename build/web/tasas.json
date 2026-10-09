@@ -5,33 +5,33 @@
     {
       "pais": "Perú",
       "tipo": "regular",
-      "tasa": 280,
+      "tasa": 275,
       "modo": "multiplicar",
       "bandera": "🇵🇪"
     },
     { 
       "pais": "Perú",
       "tipo": "vip1",
-      "tasa": 281,
+      "tasa": 276,
       "modo": "multiplicar",
       "bandera": "🇵🇪"
     },
     {
       "pais": "Perú",
       "tipo": "vip2",
-      "tasa": 282,
+      "tasa": 277,
       "modo": "multiplicar",
       "bandera": "🇵🇪"
     },
     {
       "pais": "Chile",
-      "tasa": 0.910,
+      "tasa": 0.900,
       "modo": "multiplicar",
       "bandera": "🇨🇱"
     },
     {
       "pais": "EE.UU.",
-      "tasa": 930,
+      "tasa": 900,
       "modo": "multiplicar",
       "bandera": "🇺🇸"
     }
