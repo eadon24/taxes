@@ -12,14 +12,14 @@
     { 
       "pais": "Perú",
       "tipo": "vip1",
-      "tasa": 278,
+      "tasa": 277.01,
       "modo": "multiplicar",
       "bandera": "🇵🇪"
     },
     {
       "pais": "Perú",
       "tipo": "vip2",
-      "tasa": 280,
+      "tasa": 277.02,
       "modo": "multiplicar",
       "bandera": "🇵🇪"
     },
